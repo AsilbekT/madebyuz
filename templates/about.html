@@ -1,0 +1,418 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <!--==============================
+     Preloader
+  ==============================-->
+    <div class="preloader  ">
+        <button class="vs-btn preloaderCls">Cancel Preloader </button>
+        <div class="preloader-inner">
+            <img src="{% static 'assets/img/logo.png' %}" alt="Vendora">
+            <span class="loader"></span>
+        </div>
+    </div>
+    <div class="popup-newsletter-active popup-newsletter-wrap show">
+        <div class="popup-newsletter">
+            <button class="popup-newsletter-closer"><i class="fal fa-times"></i></button>
+            <div class="newsletter-img">
+                <img src="{% static 'assets/img/banner/popup-banner-1.jpg' %}" alt="Banner">
+            </div>
+            <div class="newsletter-content">
+                <span class="newsletter-subtitle">Newsletter</span>
+                <h2 class="newsletter-title h3">Be The First To Know</h2>
+                <p class="newsletter-text">Sign up for emails to get our latest updates</p>
+                <input type="text" class="form-control" placeholder="Your Email Address">
+                <button class="vs-btn style7">Subscribe Now</button>
+            </div>
+        </div>
+    </div>
+    <!--==============================
+    Mobile Menu
+  ============================== -->
+    <div class="vs-menu-wrapper">
+        <div class="vs-menu-area text-center">
+            <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
+            <div class="mobile-logo">
+                <a href="index.html"><img src="{% static 'assets/img/logo-mobile.png' %}" alt="Vendora"></a>
+            </div>
+            {% comment %} <div class="vs-mobile-menu">
+                <ul>
+                    <li class="menu-item-has-children">
+                        <a href="index.html">Home</a>
+                        <ul class="sub-menu">
+                            <li><a href="index.html">Home v1 - Fashion</a></li>
+                            <li><a href="index-2.html">Home v2 - Electronic</a></li>
+                            <li><a href="index-3.html">Home v3 - Organic Food</a></li>
+                            <li><a href="index-4.html">Home v4 - Furniture</a></li>
+                            <li><a href="index-5.html">Home v5 - Wine</a></li>
+                            <li><a href="index-6.html">Home v6 - Shoes</a></li>
+                            <li><a href="index-7.html">Home v7 - Interior Furniture</a></li>
+                            <li><a href="index-8.html">Home v8 - Bags & Eyeware</a></li>
+                            <li><a href="index-9.html">Home v9 - Jewellery & Watches</a></li>
+                            <li><a href="index-10.html">Home v10 - Market</a></li>
+                            <li><a href="index-11.html">Home v11 - Medical</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="blog.html">Blog</a>
+                        <ul class="sub-menu">
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="blog-details.html">Blog Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="blog.html">Shop</a>
+                        <ul class="sub-menu">
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="shop-details.html">Shop Details</a></li>
+                            <li><a href="cart.html">Shopping Cart</a></li>
+                            <li><a href="checkout.html">Check Out</a></li>
+                            <li><a href="login.html">Login Page</a></li>
+                            <li><a href="signup.html">Registration Page</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#">Pages</a>
+                        <ul class="sub-menu">
+                            <li><a href="faq.html">FAQ Page</a></li>
+                            <li><a href="error.html">Error Page</a></li>
+                            <li><a href="coming-soon.html">Coming Soon</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div> {% endcomment %}
+        </div>
+    </div>
+    <!--==============================
+    Header Area
+    ==============================-->
+    {% include 'nav.html' %}
+    <!--==============================
+    Breadcumb
+============================== -->
+    <div class="breadcumb-wrapper " data-bg-src="{% static 'assets/img/breadcumb/bredcumb-1.png' %}">
+        <div class="container z-index-common">
+            <div class="breadcumb-content">
+                {% comment %} <h1 class="breadcumb-title">About Us</h1> {% endcomment %}
+            </div>
+            <div class="breadcumb-menu-wrap">
+                <ul >
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">About Us</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--==============================
+    About Us
+    ==============================-->
+    <section class="space-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-lg-6 col-xl-7 mb-30">
+                    <div class="img-box">
+                        <div class="img-1"><img src="{% static 'assets/img/about/about-1-1.jpg' %}" alt="About Image"></div>
+                        <div class="img-2"><img src="{% static 'assets/img/about/about-1-2.jpg' %}" alt="About Image"></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-5 mb-30">
+                    <div class="about-style1">
+                        <h2 class="about-title">More About Our Services Digital Product</h2>
+                        <p class="about-text">Credibly matrix frictionless products rather than inexpensive expertise. Uniquely streamline functional initiatives and covalent quality vectors. Intrinsicly enhance goal-oriented interfaces and future-proof human capital. Competently optimize leveraged leadership skills rather than market positioning imperatives. Energistically transition extensible models without installed base information.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==============================
+    Counter Area
+    ==============================-->
+    <div class="space-extra">
+        <div class="container">
+            <div class="row text-center justify-content-between gy-3">
+                <div class="col-sm-auto">
+                    <div class="vs-counter">
+                        <span class="counter-number">60,000</span>
+                        <p class="counter-text">Happy Customers</p>
+                    </div>
+                </div>
+                <div class="col-sm-auto">
+                    <div class="vs-counter">
+                        <span class="counter-number">25k</span>
+                        <p class="counter-text">Daily Visitors</p>
+                    </div>
+                </div>
+                <div class="col-sm-auto">
+                    <div class="vs-counter">
+                        <span class="counter-number">200+</span>
+                        <p class="counter-text">Products Categories</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--==============================
+    Video Area
+    ==============================-->
+    <div class="position-relative  ">
+        <img src="{% static '' %}assets/img/about/video-3-1.jpg" alt="Video Image">
+        <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="play-btn style2 popup-video overlay-center"><i class="fas fa-play"></i></a>
+    </div>
+    <!--==============================
+    Team Area
+    ==============================-->
+    <section class="space-top space-extra-bottom">
+        <div class="container">
+            <div class="title-area text-center">
+                <h2 class="sec-title-style5">Founding Members</h2>
+                <p class="sub-title-style5">Experts Teams</p>
+            </div>
+            <div class="row vs-carousel" data-slide-show="3" data-md-slide-show="3" data-xs-slide-show="1">
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="team-style2">
+                        <div class="team-img">
+                            <span class="team-border"></span>
+                            <img src="{% static 'assets/img/team/team-2-1.jpg' %}" alt="TEam Image">
+                            <div class="team-social">
+                                <a href="#">Facebook</a>
+                                <a href="#">Twitter</a>
+                                <a href="#">Instagram</a>
+                            </div>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="team-name">Zara Malika</h3>
+                            <span class="team-degi">Founder</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="team-style2">
+                        <div class="team-img">
+                            <span class="team-border"></span>
+                            <img src="{% static 'assets/img/team/team-2-4.jpg' %}" alt="TEam Image">
+                            <div class="team-social">
+                                <a href="#">Facebook</a>
+                                <a href="#">Twitter</a>
+                                <a href="#">Instagram</a>
+                            </div>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="team-name">Rose Marian</h3>
+                            <span class="team-degi">Founder</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="team-style2">
+                        <div class="team-img">
+                            <span class="team-border"></span>
+                            <img src="{% static 'assets/img/team/team-2-2.jpg' %}" alt="TEam Image">
+                            <div class="team-social">
+                                <a href="#">Facebook</a>
+                                <a href="#">Twitter</a>
+                                <a href="#">Instagram</a>
+                            </div>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="team-name">Sowat Ahsan</h3>
+                            <span class="team-degi">Founder</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="team-style2">
+                        <div class="team-img">
+                            <span class="team-border"></span>
+                            <img src="{% static 'assets/img/team/team-2-3.jpg' %}" alt="TEam Image">
+                            <div class="team-social">
+                                <a href="#">Facebook</a>
+                                <a href="#">Twitter</a>
+                                <a href="#">Instagram</a>
+                            </div>
+                        </div>
+                        <div class="team-content">
+                            <h3 class="team-name">Zecica Lemmi</h3>
+                            <span class="team-degi">Manager</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==============================
+    Testimonial Area
+    ==============================-->
+    <section class="bg-style3 space">
+        <div class="container">
+            <div class="testi-style2-slide vs-carousel" data-slide-show="1" data-md-slide-show="1" data-sm-slide-show="1" data-xs-slide-show="1" data-dots="true" data-fade="true">
+                <div class="slide">
+                    <div class="testi-style2">
+                        <div class="testi-content">
+                            <img src="{% static 'assets/img/icon/quote-3.png' %}" alt="Quote Icon" class="testi-quote">
+                            <p class="testi-text">“Intrinsicly <u>coordinate covalent quality vectors</u> for multimedia based materials. Efficiently fashion real-time "outside the box" thinking via interoperable initiatives...”</p>
+                            <div class="testi-border"></div>
+                            <h3 class="testi-author-name">Sowat Ahsan</h3>
+                            <span class="testi-author-degi">Customer</span>
+                        </div>
+                        <div class="testi-avater">
+                            <img src="{% static 'assets/img/testimonial/avater-3-1.jpg' %}" alt="Testimonial">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="testi-style2">
+                        <div class="testi-content">
+                            <img src="{% static 'assets/img/icon/quote-3.png' %}" alt="Quote Icon" class="testi-quote">
+                            <p class="testi-text">“Lorem ipsum is <u>placeholder text commonly used in the</u> graphic, print, and publishing industries for previewing layouts and visual mockups tempor incididunt ut labore magna...”</p>
+                            <div class="testi-border"></div>
+                            <h5 class="testi_card_name--md">Wardan Mofiz</h5>
+                            <span class="testi_card_degi">Customer</span>
+                        </div>
+                        <div class="testi-avater">
+                            <img src="{% static 'assets/img/testimonial/avater-3-2.jpg' %}" alt="Testimonial">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="testi-style2">
+                        <div class="testi-content">
+                            <img src="{% static 'assets/img/icon/quote-3.png' %}" alt="Quote Icon" class="testi-quote">
+                            <p class="testi-text">“From its medieval <u>origins to the digital era</u> learn everything there is to know about the ubiquitous lorem ipsum passage who is thought to have Finibus the passage experienced...”</p>
+                            <div class="testi-border"></div>
+                            <h5 class="testi_card_name--md">Harry Tube</h5>
+                            <span class="testi_card_degi">Customer</span>
+                        </div>
+                        <div class="testi-avater">
+                            <img src="{% static 'assets/img/testimonial/avater-3-3.jpg' %}" alt="Testimonial">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==============================
+    Brand Area
+    ==============================-->
+    <div class="space">
+        <div class="container">
+            <div class="row justify-content-between vs-carousel text-center" data-slide-show="5" data-md-slide-show="3" data-sm-slide-show="2">
+                <div class="col-auto">
+                    <div class="vs-brand">
+                        <img src="{% static 'assets/img/brand/b-4-1.png' %}" alt="Brand image">
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="vs-brand">
+                        <img src="{% static 'assets/img/brand/b-4-2.png' %}" alt="Brand image">
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="vs-brand">
+                        <img src="{% static 'assets/img/brand/b-4-3.png' %}" alt="Brand image">
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="vs-brand">
+                        <img src="{% static 'assets/img/brand/b-4-4.png' %}" alt="Brand image">
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="vs-brand">
+                        <img src="{% static '' %}assets/img/brand/b-4-5.png" alt="Brand image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--==============================
+			Footer Area
+	==============================-->
+    <footer class="footer-wrapper footer-layout3" data-bg-src="{% static 'assets/img/bg/footer-bg-3-1.jpg' %}">
+        <div class="widget-area">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-sm-6 col-md-6 col-lg-auto">
+                        <div class="widget  footer-widget">
+                            <h3 class="widget_title">Office</h3>
+                            <div class="vs-widget-about">
+                                <p class="footer-info">29 Holles Place, Dublin 2 D02 YY46</p>
+                                <p class="footer-info">68 Jay Street, Suite 902 New Side Brooklyn, NY 11201</p>
+                                <p class="footer-info">United States</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-auto">
+                        <div class="widget widget_nav_menu  footer-widget">
+                            <h3 class="widget_title">Useful Links</h3>
+                            <div class="menu-all-pages-container">
+                                <ul class="menu">
+                                    <li><a href="#">Customer Rating</a></li>
+                                    <li><a href="#">Top Product</a></li>
+                                    <li><a href="#">Weekly Best Items</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Latest Posts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-auto">
+                        <div class="widget widget_nav_menu  footer-widget">
+                            <h3 class="widget_title">Quick Links</h3>
+                            <div class="menu-all-pages-container">
+                                <ul class="menu">
+                                    <li><a href="#">Why Buy From Us?</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Store Locator</a></li>
+                                    <li><a href="#">About Blue John</a></li>
+                                    <li><a href="#">About Whitby Jet</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-auto">
+                        <div class="widget widget_nav_menu  footer-widget">
+                            <h3 class="widget_title">Services</h3>
+                            <div class="menu-all-pages-container">
+                                <ul class="menu">
+                                    <li><a href="#">Make an Appointment</a></li>
+                                    <li><a href="#">Jewellery Design Service</a></li>
+                                    <li><a href="#">Jewellery Repairs</a></li>
+                                    <li><a href="#">Price Match Promise</a></li>
+                                    <li><a href="#">Trade Your Watch</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright-wrap text-center">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-md-auto">
+                        <p class="mb-0"><i class="fal fa-copyright"></i> 2022 <a class="text-reset" href="index.html">Vendora</a>. All rights reserved by <a class="text-reset" href="https://themeforest.net/user/vecuro">Vecuro</a>.</p>
+                    </div>
+                    <div class="col-md-auto d-none d-md-block">
+                        <img src="{% static 'assets/img/footer/card-2.png' %}" alt="Footer Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--********************************
+			Code End  Here 
+	******************************** -->
+
+
+    <!-- Scroll To Top -->
+    <a href="#" class="scrollToTop scroll-btn"><i class="far fa-arrow-up"></i></a>
+
+{% endblock %}

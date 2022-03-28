@@ -1,0 +1,888 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+    <!--[if lte IE 9]>
+    	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+
+
+    <!--********************************
+   		Code Start From Here 
+	******************************** -->
+
+
+
+
+    <!--==============================
+     Preloader
+  ==============================-->
+    <div class="preloader  ">
+        <button class="vs-btn preloaderCls">Cancel Preloader </button>
+        <div class="preloader-inner">
+            <img src="{% static 'assets/img/logo.png' %}" alt="Vendora">
+            <span class="loader"></span>
+        </div>
+    </div>
+    <div class="popup-newsletter-active popup-newsletter-wrap show">
+        <div class="popup-newsletter">
+            <button class="popup-newsletter-closer"><i class="fal fa-times"></i></button>
+            <div class="newsletter-img">
+                <img src="{% static 'assets/img/banner/popup-banner-1.jpg' %}" alt="Banner">
+            </div>
+            <div class="newsletter-content">
+                <span class="newsletter-subtitle">Newsletter</span>
+                <h2 class="newsletter-title h3">Be The First To Know</h2>
+                <p class="newsletter-text">Sign up for emails to get our latest updates</p>
+                <input type="text" class="form-control" placeholder="Your Email Address">
+                <button class="vs-btn style7">Subscribe Now</button>
+            </div>
+        </div>
+    </div>
+    <!--==============================
+    Mobile Menu
+  ============================== -->
+    <div class="vs-menu-wrapper">
+        <div class="vs-menu-area text-center">
+            <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
+            <div class="mobile-logo">
+                <a href="index.html"><img src="{% static 'assets/img/logo-mobile.png' %}" alt="Vendora"></a>
+            </div>
+            <div class="vs-mobile-menu">
+                <ul>
+                    <li class="menu-item-has-children">
+                        <a href="index.html">Home</a>
+                        <ul class="sub-menu">
+                            <li><a href="index.html">Home v1 - Fashion</a></li>
+                            <li><a href="index-2.html">Home v2 - Electronic</a></li>
+                            <li><a href="index-3.html">Home v3 - Organic Food</a></li>
+                            <li><a href="index-4.html">Home v4 - Furniture</a></li>
+                            <li><a href="index-5.html">Home v5 - Wine</a></li>
+                            <li><a href="index-6.html">Home v6 - Shoes</a></li>
+                            <li><a href="index-7.html">Home v7 - Interior Furniture</a></li>
+                            <li><a href="index-8.html">Home v8 - Bags & Eyeware</a></li>
+                            <li><a href="index-9.html">Home v9 - Jewellery & Watches</a></li>
+                            <li><a href="index-10.html">Home v10 - Market</a></li>
+                            <li><a href="index-11.html">Home v11 - Medical</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="blog.html">Blog</a>
+                        <ul class="sub-menu">
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="blog-details.html">Blog Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="blog.html">Shop</a>
+                        <ul class="sub-menu">
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="shop-details.html">Shop Details</a></li>
+                            <li><a href="cart.html">Shopping Cart</a></li>
+                            <li><a href="checkout.html">Check Out</a></li>
+                            <li><a href="login.html">Login Page</a></li>
+                            <li><a href="signup.html">Registration Page</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#">Pages</a>
+                        <ul class="sub-menu">
+                            <li><a href="faq.html">FAQ Page</a></li>
+                            <li><a href="error.html">Error Page</a></li>
+                            <li><a href="coming-soon.html">Coming Soon</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--==============================
+        Header Area
+    ==============================-->
+{% include 'nav.html' %}
+    <!--==============================
+      Hero Area
+    ==============================-->
+    <section class="vs-hero-wrapper hero-layout7 position-relative  ">
+        <div class="vs-hero-carousel" data-height="935" data-container="1900">
+            <!-- Slide 1-->
+            <div class="ls-slide" data-ls="duration:12000; transition2d:5; kenburnsscale:1.2; parallaxaxis:x;">
+                <img width="1733" height="850" src="{% static '' %}assets/img/hero/hero-7-1.jpg" class="ls-bg" alt="hero bg image" />
+                <h1 style="top:195px; left:318px; font-weight:500; background-size:inherit; background-position:inherit; font-size:100px; font-family:Jost; color:#2c2c2c;" class="ls-l ls-hide-phone" data-ls="offsetxin:-50lw; durationin:1500; easingin:easeOutQuint; offsetxout:-50lw; durationout:1500; easingout:easeOutQuint;">
+                    Trendy
+                </h1>
+                <h1 style="top:317px; left:318px; font-weight:500; background-size:inherit; background-position:inherit; font-size:100px; font-family:Jost; color:#2c2c2c;" class="ls-l ls-hide-phone" data-ls="offsetxin:-50lw; durationin:1500; delayin:500; easingin:easeOutQuint; offsetxout:-50lw; durationout:1500; easingout:easeOutQuint;">
+                    Collection
+                </h1>
+                <div style="top:501px; left:318px; background-size:inherit; background-position:inherit;" class="ls-l ls-hide-phone" data-ls="offsetxin:-100lw; delayin:900; offsetxout:-100lw; durationout:1400; easingout:easeOutQuint;">
+                    <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="popup-video ls-play-btn"><i class="fal fa-play"></i></a>
+                </div>
+                <p style="top:524px; left:405px; font-style:italic; background-size:inherit; background-position:inherit; font-size:14px; letter-spacing:1px; color:#000000;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:100lh; durationin:1500; delayin:1400; easingin:easeOutQuint; clipin:100% 0 0 0; durationout:1500; easingout:easeOutQuint; clipout:100% 0 0 0;">Watch Trailer</p>
+                <p style="top:501px; left:553px; background-size:inherit; background-position:inherit; width:3px; height:65px; background-color:#000000;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="durationin:1200; delayin:1500; easingin:easeOutQuint; heightin:0; durationout:1500; easingout:easeOutQuint; heightout:0;"></p>
+                <div style="top:509px; left:572px; font-weight:500; background-size:inherit; background-position:inherit; font-size:20px; font-family:Jost; line-height:26px; color:#000000;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="durationin:1500; delayin:1900; easingin:easeOutQuint; fadein:false; clipin:0 100% 0 0; durationout:1300; easingout:easeOutQuint; clipout:0 100% 0 0;">
+                    $30 off your
+                    <br>
+                    first Order
+                </div>
+                <p style="top:499px; left:854px; font-weight:500; background-size:inherit; background-position:inherit; font-size:220px; color:#fff; font-family:Jost; line-height:200px;" class="ls-l ls-hide-phone" data-ls="offsetyin:bottom; durationin:1500; delayin:2100; easingin:easeOutQuint; offsetyout:bottom; durationout:1500; easingout:easeOutQuint;">2022</p>
+                <img width="320" height="320" src="{% static '' %}assets/img/hero/hero-7-1-1.png" class="ls-l" alt="" style="top:154px; left:1237px; background-size:inherit; background-position:inherit;" data-ls="offsetyin:top; durationin:1500; delayin:2200; easingin:easeOutQuint; rotatein:30; offsetyout:top; durationout:1500; easingout:easeOutQuint; rotateout:30;">
+                <p style="top:518px; left:405px; font-style:italic; background-size:inherit; background-position:inherit; font-size:28px; letter-spacing:1px; color:#000000;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetyin:100lh; durationin:1500; delayin:1400; easingin:easeOutQuint; clipin:100% 0 0 0; durationout:1500; easingout:easeOutQuint; clipout:100% 0 0 0;">Watch Trailer</p>
+                <h1 style="top:135px; left:100px; font-weight:500; background-size:inherit; background-position:inherit; font-size:150px; font-family:Jost; color:#2c2c2c;" class="ls-l ls-hide-desktop ls-hide-tablet" data-ls="offsetxin:-50lw; durationin:1500; easingin:easeOutQuint; offsetxout:-50lw; durationout:1500; easingout:easeOutQuint;">
+                    Trendy
+                </h1>
+                <h1 style="top:310px; left:100px; font-weight:500; background-size:inherit; background-position:inherit; font-size:150px; font-family:Jost; color:#2c2c2c;" class="ls-l ls-hide-desktop ls-hide-tablet" data-ls="offsetxin:-50lw; durationin:1500; delayin:500; easingin:easeOutQuint; offsetxout:-50lw; durationout:1500; easingout:easeOutQuint;">
+                    Collection
+                </h1>
+                <div style="top:585px; left:100px; background-size:inherit; background-position:inherit;" class="ls-l ls-hide-desktop ls-hide-tablet" data-ls="offsetxin:-100lw; delayin:900; offsetxout:-100lw; durationout:1400; easingout:easeOutQuint;">
+                    <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="popup-video ls-play-btn"><i class="fal fa-play"></i></a>
+                </div>
+                <p style="top:649px; left:1323px; font-weight:500; background-size:inherit; background-position:inherit; font-size:180px; color:#fff; font-family:Jost; line-height:150px;" class="ls-l ls-hide-desktop ls-hide-tablet" data-ls="offsetyin:bottom; durationin:1500; delayin:2100; easingin:easeOutQuint; offsetyout:bottom; durationout:1500; easingout:easeOutQuint;">2022</p>
+            </div>
+            <!-- Slide 2-->
+            <div class="ls-slide" data-ls="duration:12000; transition2d:5; kenburnsscale:1.2; parallaxaxis:x;">
+                <img width="1733" height="850" src="{% static '' %}assets/img/hero/hero-7-2.jpg" class="ls-bg" alt="Hero Bg image" />
+                <h1 style="top:195px; left:318px; font-weight:500; background-size:inherit; background-position:inherit; font-size:100px; font-family:Jost; color:#2c2c2c;" class="ls-l ls-hide-phone" data-ls="offsetxin:-50lw; durationin:1500; easingin:easeOutQuint; offsetxout:-50lw; durationout:1500; easingout:easeOutQuint;">
+                    Summer
+                </h1>
+                <h1 style="top:317px; left:318px; font-weight:500; background-size:inherit; background-position:inherit; font-size:100px; font-family:Jost; color:#2c2c2c;" class="ls-l ls-hide-phone" data-ls="offsetxin:-50lw; durationin:1500; delayin:500; easingin:easeOutQuint; offsetxout:-50lw; durationout:1500; easingout:easeOutQuint;">
+                    Flash Sale
+                </h1>
+                <div style="top:501px; left:318px; background-size:inherit; background-position:inherit;" class="ls-l ls-hide-phone" data-ls="offsetxin:-100lw; delayin:900; offsetxout:-100lw; durationout:1400; easingout:easeOutQuint;">
+                    <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="popup-video ls-play-btn"><i class="fal fa-play"></i></a>
+                </div>
+                <p style="top:524px; left:405px; font-style:italic; background-size:inherit; background-position:inherit; font-size:14px; letter-spacing:1px; color:#000000;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:100lh; durationin:1500; delayin:1400; easingin:easeOutQuint; clipin:100% 0 0 0; durationout:1500; easingout:easeOutQuint; clipout:100% 0 0 0;">Watch Trailer</p>
+                <p style="top:501px; left:553px; background-size:inherit; background-position:inherit; width:3px; height:65px; background-color:#000000;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="durationin:1200; delayin:1500; easingin:easeOutQuint; heightin:0; durationout:1500; easingout:easeOutQuint; heightout:0;"></p>
+                <div style="top:509px; left:572px; font-weight:500; background-size:inherit; background-position:inherit; font-size:20px; font-family:Jost; line-height:26px; color:#000000;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="durationin:1500; delayin:1900; easingin:easeOutQuint; fadein:false; clipin:0 100% 0 0; durationout:1300; easingout:easeOutQuint; clipout:0 100% 0 0;">
+                    $30 off your
+                    <br>
+                    first Order
+                </div>
+                <p style="top:503px; left:885px; font-weight:500; background-size:inherit; background-position:inherit; opacity:0.50; font-size:220px; color:#fff; font-family:Jost; line-height:200px;" class="ls-l ls-hide-phone" data-ls="offsetyin:bottom; durationin:1500; delayin:2100; easingin:easeOutQuint; offsetyout:bottom; durationout:1500; easingout:easeOutQuint;">2022</p>
+                <img width="320" height="320" src="{% static '' %}assets/img/hero/hero-7-2-1.png" class="ls-l" alt="" style="top:154px; left:1248px; background-size:inherit; background-position:inherit;" data-ls="offsetyin:top; durationin:1500; delayin:2200; easingin:easeOutQuint; rotatein:30; offsetyout:top; durationout:1500; easingout:easeOutQuint; rotateout:30;">
+                <p style="top:518px; left:405px; font-style:italic; background-size:inherit; background-position:inherit; font-size:28px; letter-spacing:1px; color:#000000;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetyin:100lh; durationin:1500; delayin:1400; easingin:easeOutQuint; clipin:100% 0 0 0; durationout:1500; easingout:easeOutQuint; clipout:100% 0 0 0;">Watch Trailer</p>
+                <h1 style="top:135px; left:100px; font-weight:500; background-size:inherit; background-position:inherit; font-size:150px; font-family:Jost; color:#2c2c2c;" class="ls-l ls-hide-desktop ls-hide-tablet" data-ls="offsetxin:-50lw; durationin:1500; easingin:easeOutQuint; offsetxout:-50lw; durationout:1500; easingout:easeOutQuint;">
+                    Summer
+                </h1>
+                <h1 style="top:310px; left:100px; font-weight:500; background-size:inherit; background-position:inherit; font-size:150px; font-family:Jost; color:#2c2c2c;" class="ls-l ls-hide-desktop ls-hide-tablet" data-ls="offsetxin:-50lw; durationin:1500; delayin:500; easingin:easeOutQuint; offsetxout:-50lw; durationout:1500; easingout:easeOutQuint;">
+                    Flash Sale
+                </h1>
+                <div style="top:585px; left:100px; background-size:inherit; background-position:inherit;" class="ls-l ls-hide-desktop ls-hide-tablet" data-ls="offsetxin:-100lw; delayin:900; offsetxout:-100lw; durationout:1400; easingout:easeOutQuint;">
+                    <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="popup-video ls-play-btn"><i class="fal fa-play"></i></a>
+                </div>
+                <p style="top:586px; left:963px; font-weight:500; background-size:inherit; background-position:inherit; opacity:0.50; font-size:180px; color:#fff; font-family:Jost; line-height:150px;" class="ls-l ls-hide-desktop ls-hide-tablet" data-ls="offsetyin:bottom; durationin:1500; delayin:2100; easingin:easeOutQuint; offsetyout:bottom; durationout:1500; easingout:easeOutQuint;">2022</p>
+            </div>
+            <!-- Slide 3-->
+            <div class="ls-slide" data-ls="duration:12000; transition2d:5; kenburnsscale:1.2; parallaxaxis:x;">
+                <img width="1733" height="850" src="{% static '' %}assets/img/hero/hero-7-3.jpg" class="ls-bg" alt="Hero Bg" />
+                <h1 style="top:195px; left:318px; font-weight:500; background-size:inherit; background-position:inherit; font-size:100px; font-family:Jost; color:#2c2c2c;" class="ls-l ls-hide-phone" data-ls="offsetxin:-50lw; durationin:1500; easingin:easeOutQuint; offsetxout:-50lw; durationout:1500; easingout:easeOutQuint;">
+                    Latest
+                </h1>
+                <h1 style="top:317px; left:318px; font-weight:500; background-size:inherit; background-position:inherit; font-size:100px; font-family:Jost; color:#2c2c2c;" class="ls-l ls-hide-phone" data-ls="offsetxin:-50lw; durationin:1500; delayin:500; easingin:easeOutQuint; offsetxout:-50lw; durationout:1500; easingout:easeOutQuint;">
+                    Furniture
+                </h1>
+                <div style="top:501px; left:318px; background-size:inherit; background-position:inherit;" class="ls-l ls-hide-phone" data-ls="offsetxin:-100lw; delayin:900; offsetxout:-100lw; durationout:1400; easingout:easeOutQuint;">
+                    <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="popup-video ls-play-btn"><i class="fal fa-play"></i></a>
+                </div>
+                <p style="top:524px; left:405px; font-style:italic; background-size:inherit; background-position:inherit; font-size:14px; letter-spacing:1px; color:#000000;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:100lh; durationin:1500; delayin:1400; easingin:easeOutQuint; clipin:100% 0 0 0; durationout:1500; easingout:easeOutQuint; clipout:100% 0 0 0;">Watch Trailer</p>
+                <p style="top:501px; left:553px; background-size:inherit; background-position:inherit; width:3px; height:65px; background-color:#000000;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="durationin:1200; delayin:1500; easingin:easeOutQuint; heightin:0; durationout:1500; easingout:easeOutQuint; heightout:0;"></p>
+                <div style="top:509px; left:572px; font-weight:500; background-size:inherit; background-position:inherit; font-size:20px; font-family:Jost; line-height:26px; color:#000000;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="durationin:1500; delayin:1900; easingin:easeOutQuint; fadein:false; clipin:0 100% 0 0; durationout:1300; easingout:easeOutQuint; clipout:0 100% 0 0;">
+                    $30 off your
+                    <br>
+                    first Order
+                </div>
+                <p style="top:640px; left:1184px; font-weight:500; background-size:inherit; background-position:inherit; opacity:0.50; font-size:220px; color:#fff; font-family:Jost; line-height:200px;" class="ls-l ls-hide-phone" data-ls="offsetyin:bottom; durationin:1500; delayin:2100; easingin:easeOutQuint; offsetyout:bottom; durationout:1500; easingout:easeOutQuint;">2022</p>
+                <img width="320" height="320" src="{% static '' %}assets/img/hero/hero-7-3-1.png" class="ls-l" alt="Hero image" style="top:154px; left:1248px; background-size:inherit; background-position:inherit;" data-ls="offsetyin:top; durationin:1500; delayin:2200; easingin:easeOutQuint; rotatein:30; offsetyout:top; durationout:1500; easingout:easeOutQuint; rotateout:30;">
+                <p style="top:518px; left:405px; font-style:italic; background-size:inherit; background-position:inherit; font-size:28px; letter-spacing:1px; color:#000000;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetyin:100lh; durationin:1500; delayin:1400; easingin:easeOutQuint; clipin:100% 0 0 0; durationout:1500; easingout:easeOutQuint; clipout:100% 0 0 0;">Watch Trailer</p>
+                <h1 style="top:135px; left:100px; font-weight:500; background-size:inherit; background-position:inherit; font-size:150px; font-family:Jost; color:#2c2c2c;" class="ls-l ls-hide-desktop ls-hide-tablet" data-ls="offsetxin:-50lw; durationin:1500; easingin:easeOutQuint; offsetxout:-50lw; durationout:1500; easingout:easeOutQuint;">
+                    Latest
+                </h1>
+                <h1 style="top:310px; left:100px; font-weight:500; background-size:inherit; background-position:inherit; font-size:150px; font-family:Jost; color:#2c2c2c;" class="ls-l ls-hide-desktop ls-hide-tablet" data-ls="offsetxin:-50lw; durationin:1500; delayin:500; easingin:easeOutQuint; offsetxout:-50lw; durationout:1500; easingout:easeOutQuint;">
+                    Furniture
+                </h1>
+                <div style="top:585px; left:100px; background-size:inherit; background-position:inherit;" class="ls-l ls-hide-desktop ls-hide-tablet" data-ls="offsetxin:-100lw; delayin:900; offsetxout:-100lw; durationout:1400; easingout:easeOutQuint;">
+                    <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="popup-video ls-play-btn"><i class="fal fa-play"></i></a>
+                </div>
+                <p style="top:708px; left:1208px; font-weight:500; background-size:inherit; background-position:inherit; opacity:0.50; font-size:180px; color:#fff; font-family:Jost; line-height:150px;" class="ls-l ls-hide-desktop ls-hide-tablet" data-ls="offsetyin:bottom; durationin:1500; delayin:2100; easingin:easeOutQuint; offsetyout:bottom; durationout:1500; easingout:easeOutQuint;">2022</p>
+            </div>
+        </div>
+    </section>
+    <!--==============================
+    Banner Area
+    ==============================-->
+    <section class="  ">
+        <div class="container vs_container_style3">
+            <div class="banner-wrap9">
+                <div class="row">
+                    <div class="col-xl-6 mb-30">
+                        <div class="banner_style11" data-bg-src="{% static 'assets/img/banner/banner-12-1.jpg' %}">
+                            <div class="banner_body">
+                                <span class="banner_label">Super Cool Offer</span>
+                                <h2 class="banner_title h3">30% Off On Summer</h2>
+                                <a href="shop.html" class="line-btn style-white">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 mb-30">
+                        <div class="banner_style12" data-bg-src="{% static 'assets/img/banner/banner-13-1.jpg' %}">
+                            <div class="banner_body">
+                                <span class="banner_label">Up To 20% Off</span>
+                                <h2 class="banner_title h4">Get Custom Furniture</h2>
+                                <a href="shop.html" class="line-btn">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3 mb-30">
+                        <div class="banner_style12" data-bg-src="{% static 'assets/img/banner/banner-13-2.jpg' %}">
+                            <div class="banner_body">
+                                <span class="banner_label">Up To 40% Off</span>
+                                <h2 class="banner_title h4">2022 Top Flash Sale</h2>
+                                <a href="shop.html" class="line-btn">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==============================
+    Products filter Area
+    ==============================-->
+    <section class="space-top space-extra-bottom">
+        <div class="container">
+            <div class="title-area text-center">
+                <p class="sub-title-style3">Weekend Top Brands</p>
+                <h2 class="sec-title">Bestsellers Products</h2>
+            </div>
+            <div class="text-center">
+                <div class="filter-menu style2 filter-menu-active">
+                    <button data-filter="*" class="active">ALL</button>
+                    <button data-filter=".nike">Nike</button>
+                    <button data-filter=".puma">Puma</button>
+                    <button data-filter=".adidas">adidas</button>
+                    <button data-filter=".bata">Bata</button>
+                    <button data-filter=".apex">Apex</button>
+                </div>
+            </div>
+            <div class="row filter-active">
+                <div class="col-md-6 col-lg-4 col-xl-3 filter-item apex nike adidas">
+                    <div class="vs-product product_layout5">
+                        <div class="product-img">
+                            <span class="product-label">Sale</span>
+                            <a href="shop-details.html"><img src="{% static 'assets/img/product/product-5-1.jpg' %}" alt="Product" class="w-100"></a>
+                            <div class="actions">
+                                <a href="cart.html" class="cart-btn">Add To Cart</a>
+                                <div class="actions_icons">
+                                    <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                    <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
+                                <span style="width:100%">Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span></span>
+                            </div>
+                            <h3 class="product-title"><a href="shop-details.html">Home Desk Table</a></h3>
+                            <p class="product-price">$159.00 <del>$200.00</del></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 filter-item puma bata">
+                    <div class="vs-product product_layout5">
+                        <div class="product-img">
+                            <a href="shop-details.html"><img src="{% static 'assets/img/product/product-5-2.jpg' %}" alt="Product" class="w-100"></a>
+                            <div class="actions">
+                                <a href="cart.html" class="cart-btn">Add To Cart</a>
+                                <div class="actions_icons">
+                                    <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                    <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
+                                <span style="width:100%">Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span></span>
+                            </div>
+                            <h3 class="product-title"><a href="shop-details.html">Dustproof Washable</a></h3>
+                            <p class="product-price">$563.00 <del>$633.00</del></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 filter-item nike adidas bata">
+                    <div class="vs-product product_layout5">
+                        <div class="product-img">
+                            <a href="shop-details.html"><img src="{% static 'assets/img/product/product-5-3.jpg' %}" alt="Product" class="w-100"></a>
+                            <div class="actions">
+                                <a href="cart.html" class="cart-btn">Add To Cart</a>
+                                <div class="actions_icons">
+                                    <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                    <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
+                                <span style="width:100%">Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span></span>
+                            </div>
+                            <h3 class="product-title"><a href="shop-details.html">Soft silicone Rubber</a></h3>
+                            <p class="product-price">$789.00 <del>$200.00</del></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 filter-item apex puma bata">
+                    <div class="vs-product product_layout5">
+                        <div class="product-img">
+                            <a href="shop-details.html"><img src="{% static 'assets/img/product/product-5-4.jpg' %}" alt="Product" class="w-100"></a>
+                            <div class="actions">
+                                <a href="cart.html" class="cart-btn">Add To Cart</a>
+                                <div class="actions_icons">
+                                    <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                    <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
+                                <span style="width:100%">Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span></span>
+                            </div>
+                            <h3 class="product-title"><a href="shop-details.html">Door Safety Pad</a></h3>
+                            <p class="product-price">$789.00 <del>$455.00</del></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 filter-item apex nike adidas">
+                    <div class="vs-product product_layout5">
+                        <div class="product-img">
+                            <a href="shop-details.html"><img src="{% static 'assets/img/product/product-5-5.jpg' %}" alt="Product" class="w-100"></a>
+                            <div class="actions">
+                                <a href="cart.html" class="cart-btn">Add To Cart</a>
+                                <div class="actions_icons">
+                                    <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                    <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
+                                <span style="width:100%">Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span></span>
+                            </div>
+                            <h3 class="product-title"><a href="shop-details.html">Adhesive Pad Door</a></h3>
+                            <p class="product-price">$963.00 <del>$896.00</del></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 filter-item apex puma bata">
+                    <div class="vs-product product_layout5">
+                        <div class="product-img">
+                            <a href="shop-details.html"><img src="{% static 'assets/img/product/product-5-6.jpg' %}" alt="Product" class="w-100"></a>
+                            <div class="actions">
+                                <a href="cart.html" class="cart-btn">Add To Cart</a>
+                                <div class="actions_icons">
+                                    <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                    <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
+                                <span style="width:100%">Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span></span>
+                            </div>
+                            <h3 class="product-title"><a href="shop-details.html">Wall Safety Guard</a></h3>
+                            <p class="product-price">$559.00 <del>$236.00</del></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 filter-item nike apex">
+                    <div class="vs-product product_layout5">
+                        <div class="product-img">
+                            <a href="shop-details.html"><img src="{% static 'assets/img/product/product-5-7.jpg' %}" alt="Product" class="w-100"></a>
+                            <div class="actions">
+                                <a href="cart.html" class="cart-btn">Add To Cart</a>
+                                <div class="actions_icons">
+                                    <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                    <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
+                                <span style="width:100%">Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span></span>
+                            </div>
+                            <h3 class="product-title"><a href="shop-details.html">Divya Shanti Premium</a></h3>
+                            <p class="product-price">$963.00 <del>$999.00</del></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 filter-item puma adidas">
+                    <div class="vs-product product_layout5">
+                        <div class="product-img">
+                            <a href="shop-details.html"><img src="{% static 'assets/img/product/product-5-8.jpg' %}" alt="Product" class="w-100"></a>
+                            <div class="actions">
+                                <a href="cart.html" class="cart-btn">Add To Cart</a>
+                                <div class="actions_icons">
+                                    <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                    <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
+                                <span style="width:100%">Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span></span>
+                            </div>
+                            <h3 class="product-title"><a href="shop-details.html">Beautyful Wall Clock</a></h3>
+                            <p class="product-price">$334.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- Minimum Give 4 list of item with 7 plus word for better performance -->
+    <div class="ticker__viewport">
+        <ul class="ticker__list" data-ticker="list" data-ticker-duration="30000">
+            <li class="ticker__item" data-ticker="item"><a href="blog.html">Free Shipping On All US</a></li>
+            <li class="ticker__item" data-ticker="item"><a href="blog.html">Get Good Products</a></li>
+            <li class="ticker__item" data-ticker="item"><a href="blog.html">Say Goodbye, Stock Up, Save!</a></li>
+            <li class="ticker__item" data-ticker="item"><a href="blog.html">Free Shipping On All US</a></li>
+            <li class="ticker__item" data-ticker="item"><a href="blog.html">Bundle & Save</a></li>
+            <li class="ticker__item" data-ticker="item"><a href="blog.html">Get Good Products</a></li>
+        </ul>
+    </div>
+    <!--==============================
+    Banner Area
+    ==============================-->
+    <section class="bg-smoke space-top space-extra-bottom">
+        <div class="container vs_container_style4">
+            <div class="row">
+                <div class="col-lg-8 col-xl-6 mb-30">
+                    <div class="banner_style13" data-bg-src="{% static 'assets/img/banner/banner-14-1.jpg' %}">
+                        <h2 class="banner_title">Free shipping over order $550.00</h2>
+                        <div class="banner_content">
+                            <h3 class="banner_title--style2">Orbit Desk</h3>
+                            <p class="banner_price">$399.00</p>
+                            <a href="shop-details.html" class="line-btn">Explore Items</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 mb-30">
+                    <div class="banner_style9 layout2">
+                        <span class="banner_label">Limited Time</span>
+                        <h2 class="banner_title">SUMMER SALE</h2>
+                        <div class="banner_discount">50<span class="text">% off</span></div>
+                        <a href="shop.html" class="banner_link vs-btn style3">Shop Now</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 mb-30">
+                    <div class="banner_style13" data-bg-src="{% static 'assets/img/banner/banner-14-2.jpg' %}">
+                        <h2 class="banner_title--style3">Office Items Super Amazing Deal</h2>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 mb-30">
+                    <div class="banner_style9 layout3" data-bg-src="{% static 'assets/img/bg/banner-bg-9-1-1.jpg' %}">
+                        <h2 class="banner_title">Take A Chance</h2>
+                        <div class="banner_discount">50<span class="text">% off</span></div>
+                        <div class="banner_code">Code: LOVEBITE</div>
+                        <p class="banner_note">Don’t Miss Out: Coupon expires soon.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3 mb-30">
+                    <div class="banner_style13" data-bg-src="{% static 'assets/img/banner/banner-14-3.jpg' %}">
+                        <h2 class="banner_title--style3">Office Items Super Amazing Deal</h2>
+                    </div>
+                </div>
+                <div class="col-xl-6 mb-30">
+                    <div class="banner_style13" data-bg-src="{% static 'assets/img/banner/banner-14-4.jpg' %}">
+                        <h2 class="banner_title">Free shipping over order $550.00</h2>
+                        <div class="banner_content">
+                            <h3 class="banner_title--style2">Orbit Desk</h3>
+                            <p class="banner_price">$399.00</p>
+                            <a href="shop-details.html" class="line-btn">Explore Items</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==============================
+    Top Daily Deal Area
+    ==============================-->
+    <section class="space-top">
+        <div class="container">
+            <div class="deals_box">
+                <div class="deals_box_head">
+                    <h2 class="deals_box_title sec-title-style3">Deal Of The Day</h2>
+                    <ul class="offer-counter deals_box_counter" data-offer-date="12/08/2023">
+                        <li>
+                            <div class="day count-number ">00</div>
+                        </li>
+                        <li>
+                            <div class="hour count-number ">00</div>
+                        </li>
+                        <li>
+                            <div class="minute count-number ">00</div>
+                        </li>
+                        <li>
+                            <div class="seconds count-number ">00</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="deals_box_body">
+                    <div class="row vs-carousel" data-slide-show="3" data-md-slide-show="2" data-sm-slide-show="1" data-xs-slide-show="1">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="vs-product product_layout5">
+                                <div class="product-img">
+                                    <a href="shop-details.html"><img src="{% static 'assets/img/product/product-5-9.jpg' %}" alt="Product" class="w-100"></a>
+                                    <div class="actions">
+                                        <a href="cart.html" class="cart-btn">Add To Cart</a>
+                                        <div class="actions_icons">
+                                            <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                            <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-content">
+                                    <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
+                                        <span style="width:100%">Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span></span>
+                                    </div>
+                                    <h3 class="product-title"><a href="shop-details.html">Chairs and Seating</a></h3>
+                                    <p class="product-price">$788.00 <del>$999.00</del></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="vs-product product_layout5">
+                                <div class="product-img">
+                                    <a href="shop-details.html"><img src="{% static 'assets/img/product/product-5-10.jpg' %}" alt="Product" class="w-100"></a>
+                                    <div class="actions">
+                                        <a href="cart.html" class="cart-btn">Add To Cart</a>
+                                        <div class="actions_icons">
+                                            <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                            <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-content">
+                                    <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
+                                        <span style="width:100%">Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span></span>
+                                    </div>
+                                    <h3 class="product-title"><a href="shop-details.html">Rattan Furniture</a></h3>
+                                    <p class="product-price">$445.00 <del>$963.00</del></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="vs-product product_layout5">
+                                <div class="product-img">
+                                    <a href="shop-details.html"><img src="{% static 'assets/img/product/product-5-11.jpg' %}" alt="Product" class="w-100"></a>
+                                    <div class="actions">
+                                        <a href="cart.html" class="cart-btn">Add To Cart</a>
+                                        <div class="actions_icons">
+                                            <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                            <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-content">
+                                    <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5">
+                                        <span style="width:100%">Rated <strong class="rating">5.00</strong> out of 5 based on <span class="rating">1</span></span>
+                                    </div>
+                                    <h3 class="product-title"><a href="shop-details.html">Wooden Furniture</a></h3>
+                                    <p class="product-price">$155.00 <del>$200.00</del></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="deals_box_footer">
+                    <a href="shop.html" class="vs-btn">View All</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==============================
+    Testimonial Area
+    ==============================-->
+    <section class="space-extra">
+        <div class="vs-carousel" data-slide-show="1" data-md-slide-show="1" data-sm-slide-show="1" data-xs-slide-show="1" data-fade="true" data-dots="true">
+            <div>
+                <div class="testi_card--big">
+                    <div class="testi_card_quote--right"><img src="{% static 'assets/img/icon/quote-right-testi.png' %}" alt="Quote Icon"></div>
+                    <div class="testi_card_quote--left"><img src="{% static 'assets/img/icon/quote-left-testi.png' %}" alt="Quote Icon"></div>
+                    <p class="testi_card_text--md">“Intrinsicly <u>coordinate covalent quality vectors</u> for multimedia based materials. Efficiently fashion real-time "outside the box" thinking via interoperable initiatives...”</p>
+                    <div class="testi_card_divider"></div>
+                    <h5 class="testi_card_name--md">Harry Tube</h5>
+                    <span class="testi_card_degi">Customer</span>
+                </div>
+            </div>
+            <div>
+                <div class="testi_card--big">
+                    <div class="testi_card_quote--right"><img src="{% static 'assets/img/icon/quote-right-testi.png' %}" alt="Quote Icon"></div>
+                    <div class="testi_card_quote--left"><img src="{% static 'assets/img/icon/quote-left-testi.png' %}" alt="Quote Icon"></div>
+                    <p class="testi_card_text--md">“Lorem ipsum is <u>placeholder text commonly used</u> in the graphic, print, and publishing industries for previewing layouts and visual mockups tempor incididunt ut labore magna...”</p>
+                    <div class="testi_card_divider"></div>
+                    <h5 class="testi_card_name--md">Harry Tube</h5>
+                    <span class="testi_card_degi">Customer</span>
+                </div>
+            </div>
+            <div>
+                <div class="testi_card--big">
+                    <div class="testi_card_quote--right"><img src="{% static 'assets/img/icon/quote-right-testi.png' %}" alt="Quote Icon"></div>
+                    <div class="testi_card_quote--left"><img src="{% static 'assets/img/icon/quote-left-testi.png' %}" alt="Quote Icon"></div>
+                    <p class="testi_card_text--md">“From its medieval <u>origins to the digital era</u> learn everything there is to know about the ubiquitous lorem ipsum passage who is thought to have Finibus the passage experienced...”</p>
+                    <div class="testi_card_divider"></div>
+                    <h5 class="testi_card_name--md">Wardan Mofiz</h5>
+                    <span class="testi_card_degi">Customer</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==============================
+    Category Area
+    ==============================-->
+    <section class="space-extra-bottom">
+        <div class="container vs_container_style2">
+            <div class="row vs-carousel" data-slide-show="4" data-lg-slide-show="3" data-sm-slide-show="1" data-xs-slide-show="1">
+                <div class="col-md-4 col-md-4 col-xl-3">
+                    <div class="cat_card">
+                        <div class="cat_card_img">
+                            <a href="shop.html"><img src="{% static 'assets/img/category/cat-2-1.jpg' %}" alt="Category Image"></a>
+                            <a href="shop.html" class="cat_card_total">396 Products</a>
+                        </div>
+                        <h3 class="cat_card_name h4"><a href="shop.html">Home Decor</a></h3>
+                    </div>
+                </div>
+                <div class="col-md-4 col-md-4 col-xl-3">
+                    <div class="cat_card">
+                        <div class="cat_card_img">
+                            <a href="shop.html"><img src="{% static 'assets/img/category/cat-2-2.jpg' %}" alt="Category Image"></a>
+                            <a href="shop.html" class="cat_card_total">445 Products</a>
+                        </div>
+                        <h3 class="cat_card_name h4"><a href="shop.html">Room Decor</a></h3>
+                    </div>
+                </div>
+                <div class="col-md-4 col-md-4 col-xl-3">
+                    <div class="cat_card">
+                        <div class="cat_card_img">
+                            <a href="shop.html"><img src="{% static 'assets/img/category/cat-2-3.jpg' %}" alt="Category Image"></a>
+                            <a href="shop.html" class="cat_card_total">596 Products</a>
+                        </div>
+                        <h3 class="cat_card_name h4"><a href="shop.html">Garden Decor</a></h3>
+                    </div>
+                </div>
+                <div class="col-md-4 col-md-4 col-xl-3">
+                    <div class="cat_card">
+                        <div class="cat_card_img">
+                            <a href="shop.html"><img src="{% static 'assets/img/category/cat-2-4.jpg' %}" alt="Category Image"></a>
+                            <a href="shop.html" class="cat_card_total">652 Products</a>
+                        </div>
+                        <h3 class="cat_card_name h4"><a href="shop.html">Office Decor</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==============================
+    Blog Area
+    ==============================-->
+    <section class="vs-blog-wrapper space-extra-bottom">
+        <div class="container">
+            <div class="title-area text-center">
+                <p class="sub-title-style3">Daily News Posts</p>
+                <h2 class="sec-title">Read Our Blogs</h2>
+            </div>
+            <div class="row vs-carousel" data-slide-show="2" data-sm-slide-show="1" data-xs-slide-show="1">
+                <div class="col-xl-6">
+                    <div class="vs-blog blog-grid">
+                        <div class="blog-img">
+                            <img src="{% static 'assets/img/blog/blog-4-1.jpg' %}" alt="Blog Image" class="w-100">
+                        </div>
+                        <div class="blog-body">
+                            <div class="blog-date">
+                                <a href="blog-details.html">12 Dec 2022</a>
+                            </div>
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <a href="blog-details.html">Vendora Style</a>
+                                </div>
+                                <h3 class="blog-title h4"><a href="blog-details.html">Objectively disintermediate excellent scenarios for cooperative core competencies</a></h3>
+                                <a href="blog-details.html" class="line-btn">Read More<i class="fal fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="vs-blog blog-grid">
+                        <div class="blog-img">
+                            <img src="{% static 'assets/img/blog/blog-4-2.jpg' %}" alt="Blog Image" class="w-100">
+                        </div>
+                        <div class="blog-body">
+                            <div class="blog-date">
+                                <a href="blog-details.html">30 Feb 2022</a>
+                            </div>
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <a href="blog-details.html">Vendora Style</a>
+                                </div>
+                                <h3 class="blog-title h4"><a href="blog-details.html">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying graphic</a></h3>
+                                <a href="blog-details.html" class="line-btn">Read More<i class="fal fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="vs-blog blog-grid">
+                        <div class="blog-img">
+                            <img src="{% static 'assets/img/blog/blog-4-3.jpg' %}" alt="Blog Image" class="w-100">
+                        </div>
+                        <div class="blog-body">
+                            <div class="blog-date">
+                                <a href="blog-details.html">31 Mar 2022</a>
+                            </div>
+                            <div class="blog-content">
+                                <div class="blog-meta">
+                                    <a href="blog-details.html">Vendora Style</a>
+                                </div>
+                                <h3 class="blog-title h4"><a href="blog-details.html">The purpose of lorem ipsum is to create a natural looking block doesn't distract</a></h3>
+                                <a href="blog-details.html" class="line-btn">Read More<i class="fal fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==============================
+    Features Area
+    ==============================-->
+    <section class="space-extra-bottom">
+        <div class="container">
+            <div class="sec_divider--style2 space-top"></div>
+            <div class="row justify-content-around justify-content-lg-between gy-4">
+                <div class="col-md-6 col-lg-3 col-xl-auto feature_case">
+                    <div class="feature_case_icon">
+                        <img src="{% static 'assets/img/icon/feature-5-1.png' %}" alt="Icon">
+                    </div>
+                    <h3 class="feature_case_title h4 fw-medium">Secure Payment</h3>
+                    <p class="feature_case_text--style2">Everybody is different, which is why we offer.</p>
+                </div>
+                <div class="col-md-6 col-lg-3 col-xl-auto feature_case">
+                    <div class="feature_case_icon">
+                        <img src="{% static 'assets/img/icon/feature-5-2.png' %}" alt="Icon">
+                    </div>
+                    <h3 class="feature_case_title h4 fw-medium">24/7 Fast Delivery</h3>
+                    <p class="feature_case_text--style2">Everybody is different, which is why we offer.</p>
+                </div>
+                <div class="col-md-6 col-lg-3 col-xl-auto feature_case">
+                    <div class="feature_case_icon">
+                        <img src="{% static 'assets/img/icon/feature-5-3.png' %}" alt="Icon">
+                    </div>
+                    <h3 class="feature_case_title h4 fw-medium">Return & Refund</h3>
+                    <p class="feature_case_text--style2">Everybody is different, which is why we offer.</p>
+                </div>
+                <div class="col-md-6 col-lg-3 col-xl-auto feature_case">
+                    <div class="feature_case_icon">
+                        <img src="{% static 'assets/img/icon/feature-5-4.png' %}" alt="Icon">
+                    </div>
+                    <h3 class="feature_case_title h4 fw-medium">Quality Support</h3>
+                    <p class="feature_case_text--style2">Everybody is different, which is why we offer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==============================
+			Footer Area
+	==============================-->
+    <footer class="footer-wrapper footer-layout4 bg-light-gray">
+        <div class="widget-area">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-sm-6 col-md-6 col-xl-auto">
+                        <div class="widget  footer-widget">
+                            <h3 class="widget_title">Office</h3>
+                            <div class="vs-widget-about">
+                                <p class="footer-info">29 Holles Place, Dublin 2 D02 YY46</p>
+                                <p class="footer-info">68 Jay Street, Suite 902 New Side Brooklyn, NY 11201</p>
+                                <p class="footer-info">United States</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-xl-auto">
+                        <div class="widget widget_nav_menu  footer-widget">
+                            <h3 class="widget_title">Useful Links</h3>
+                            <div class="menu-all-pages-container">
+                                <ul class="menu">
+                                    <li><a href="#">Customer Rating</a></li>
+                                    <li><a href="#">Top Product</a></li>
+                                    <li><a href="#">Weekly Best Items</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Latest Posts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-xl-auto">
+                        <div class="widget widget_nav_menu  footer-widget">
+                            <h3 class="widget_title">Quick Links</h3>
+                            <div class="menu-all-pages-container">
+                                <ul class="menu">
+                                    <li><a href="#">Why Buy From Us?</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Store Locator</a></li>
+                                    <li><a href="#">About Blue John</a></li>
+                                    <li><a href="#">About Whitby Jet</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-xl-auto">
+                        <div class="widget footer-widget  footer-widget">
+                            <h4 class="widget_title">Connect With Us</h4>
+                            <p>Give your inbox some love with new products, tips.</p>
+                            <form class="footer-newsletter style2">
+                                <input class="form-control" type="email" placeholder="Your Email Address" required="">
+                                <button type="submit" class="vs-btn mask-style1">Subscribe</button>
+                            </form>
+                            <div class="footer-social">
+                                <span class="social-title h6">Follow Us On:</span>
+                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-facebook-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-wrap">
+            <div class="container text-center text-lg-start">
+                <div class="row justify-content-between align-items-center gy-3 flex-row-reverse">
+                    <div class="col-lg-5 text-center text-lg-end d-none d-lg-block">
+                        <img src="{% static 'assets/img/footer/card-2.png' %}" alt="Footer Image">
+                    </div>
+                    <div class="col-lg-2 text-center">
+                        <a href="index.html"><img src="{% static 'assets/img/logo.png' %}" alt="Vendora"></a>
+                    </div>
+                    <div class="col-lg-5">
+                        <p class="mb-0"><i class="fal fa-copyright"></i> 2022 <a class="text-reset" href="index.html">Vendora</a>. All rights reserved by <a class="text-reset" href="https://themeforest.net/user/vecuro">Vecuro</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--********************************
+			Code End  Here 
+	******************************** -->
+
+
+    <!-- Scroll To Top -->
+    <a href="#" class="scrollToTop scroll-btn"><i class="far fa-arrow-up"></i></a>
+
+{% endblock %}

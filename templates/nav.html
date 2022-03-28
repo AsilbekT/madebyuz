@@ -1,0 +1,193 @@
+{% load static %}
+<header class="vs-header header-layout1">
+    <div class="container-xl">
+        <div class="header-top">
+            <div class="row justify-content-center justify-content-md-between align-items-center">
+                <div class="col-auto">
+                    <div class="header-top-links">
+                        <ul>
+                            <li>
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-bs-toggle="dropdown" aria-expanded="false">Language</a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                    <li>
+                                        <a href="#">German</a>
+                                        <a href="#">French</a>
+                                        <a href="#">Italian</a>
+                                        <a href="#">Latvian</a>
+                                        <a href="#">Spanish</a>
+                                        <a href="#">Greek</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false">Currency</a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                                    <li><a href="#">AED</a></li>
+                                    <li><a href="#">BDT</a></li>
+                                    <li><a href="#">ERN</a></li>
+                                    <li><a href="#">EGP</a></li>
+                                    <li><a href="#">EUR</a></li>
+                                    <li><a href="#">GBP</a></li>
+                                    <li><a href="#">USD</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="{% url 'login' %}">Sign in / Register</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                    <p class="header-text">Join our showroom and get 25 % off ! Coupon code : Bangol45</p>
+                </div>
+                <div class="col-auto d-none d-md-block">
+                    <div class="header-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fal fa-basketball-ball"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-xl">
+        <div class="row justify-content-between align-items-center gx-0">
+            <div class="col-md-auto align-self-stretch">
+                <div class="logo-style1">
+                    <a href="{% url 'home1' %}"><img class="logo-img" src="{% static 'assets/img/logo.png' %}" alt="Vendora"></a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="menu-top">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-lg col-xl-5 d-none d-lg-block">
+                            <form action="#" class="header-form">
+                                <input type="text" placeholder="Product Search">
+                                <button type="button">Search</button>
+                                <i class="far fa-search"></i>
+                            </form>
+                        </div>
+                        <div class="col-auto d-none d-xl-block">
+                            <div class="row gx-50">
+                                <div class="col-auto">
+                                    <div class="header-info">
+                                        <div class="header-info_icon">
+                                            <img src="{% static 'assets/img/icon/call-icon.png' %}" alt="icon">
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="header-info_link"><a href="tel:+998909511681" class="text-inherit">+998 90 951 16 81</a></div>
+                                            <span class="header-info_label">Call Us Free</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="header-info">
+                                        <div class="header-info_icon">
+                                            <img src="{% static 'assets/img/icon/mail-icon.png' %}" alt="icon">
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="header-info_link">Free Shipping</div>
+                                            <span class="header-info_label">on order over $300.0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="header-buttons">
+                                <a href="{% url 'login' %}"><i class="fal fa-user"></i></a>
+                                <a href="#" class="has-badge"><i class="fal fa-heart"></i><span class="badge">0</span></a>
+                                <div class="header-cart">
+                                    <a href="{% url 'cart' %}" class="has-badge"><i class="fal fa-shopping-bag"></i><span class="badge">{{order.get_cart_items}}</span></a>
+                                    <div class="woocommerce widget_shopping_cart">
+                                        <div class="widget_shopping_cart_content">
+                                            <ul class="cart_list">
+                                                {% for item in items %}
+                                                <li class="mini_cart_item">
+                                                    <button class="remove update-btn" data-product="{{ item.product.id }}" data-action="delete"><i class="far fa-times"></i></button>
+                                                    <a href="{% url 'shop_details' id=item.product.id %}" class="img"><img src="{{ item.product.product_url }}" alt="Cart Image"></a>
+                                                    <a href="{% url 'shop_details' id=item.product.id %}" class="product-title">{{ item.product }}</a>
+                                                    <span class="amount">${{ item.get_total }}</span>
+                                                    <div class="quantity">
+                                                        <button class="quantity-minus qut-btn update-btn"  data-product="{{ item.product.id }}" data-action="remove"><i class="far fa-minus"></i></button>
+                                                        <input type="number" class="qty-input" value="{{ item.quantity }}" min="1" max="99">
+                                                        <button class="quantity-plus qut-btn update-btn"  data-product="{{ item.product.id }}" data-action="add"><i class="far fa-plus"></i></button>
+                                                    </div>
+                                                    <div class="subtotal">
+                                                        <span>Subtotal:</span>
+                                                        <span class="amount">${{ item.get_total }}</span>
+                                                    </div>
+                                                </li>
+                                                {% endfor %}
+                                            </ul>
+                                            <p class="total">
+                                                <strong>Subtotal:</strong>
+                                                <span class="amount">${{ order.get_cart_total }}</span>
+                                            </p>
+                                            <p class="buttons">
+                                                <a href="{% url 'cart' %}" class="vs-btn">View cart</a>
+                                                <a href="{% url 'checkout' %}" class="vs-btn checkout">Checkout</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto d-block d-lg-none">
+                            <button class="vs-menu-toggle "><i class="fal fa-bars"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-area">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-auto">
+                            <nav class="main-menu menu-style1 d-none d-lg-block">
+                                <ul>
+                                    <li class="menu-item-has-children">
+                                        <a href="{% url 'shop' %}">Shop</a>
+                                        <ul class="sub-menu">
+                                            {% comment %} <li><a href="{% url 'home1' %}">Home v1 - Fashion</a></li> {% endcomment %}
+                                            <li><a href="{% url 'organic_food' %}">Organic Food</a></li>
+                                            <li><a href="{% url 'wine' %}">Wine</a></li>
+                                            <li><a href="{% url 'home_textile' %}">Textile</a></li>
+                                            <li><a href="{% url 'organic_food' %}">Organic Food</a></li>
+                                            <li><a href="{% url 'organic_food' %}">Organic Clothes</a></li>
+                                            <li><a href="{% url 'organic_food' %}">Ikat Fabric</a></li>
+                                            {% comment %} <li><a href="index-5.html">Home v5 - Wine</a></li> {% endcomment %}
+                                            {% comment %} <li><a href="index-6.html">Home v6 - Shoes</a></li> {% endcomment %}
+                                            {% comment %} <li><a href="index-7.html">Home v7 - Interior Furniture</a></li> {% endcomment %}
+                                            {% comment %} <li><a href="index-8.html">Home v8 - Bags & Eyeware</a></li> {% endcomment %}
+                                            {% comment %} <li><a href="index-9.html">Home v9 - Jewellery & Watches</a></li> {% endcomment %}
+                                            {% comment %} <li><a href="index-10.html">Home v10 - Market</a></li> {% endcomment %}
+                                            {% comment %} <li><a href="index-11.html">Home v11 - Medical</a></li> {% endcomment %}
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="{% url 'about' %}">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="{% url 'blog' %}">Blog</a>
+                                        {% comment %} <ul class="sub-menu">
+                                            <li><a href="{% url 'blog' %}">Blog</a></li>
+                                            <li><a href="{% url 'blog' %}">Blog Details</a></li>
+                                        </ul> {% endcomment %}
+                                    </li>
+                                   
+                                    <li>
+                                        <a href="{% url 'contact' %}">Contact</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-auto d-none d-lg-flex  align-self-stretch align-items-center">
+                            <button type="button" class="hamburger sideMenuToggler">
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

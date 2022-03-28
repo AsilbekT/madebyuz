@@ -1,0 +1,836 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+    <!--[if lte IE 9]>
+    	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+
+
+    <!--********************************
+   		Code Start From Here 
+	******************************** -->
+
+
+
+
+    <!--==============================
+     Preloader
+  ==============================-->
+    <div class="preloader  ">
+        <button class="vs-btn preloaderCls">Cancel Preloader </button>
+        <div class="preloader-inner">
+            <img src="{% static 'assets/img/logo.png' %}" alt="Vendora">
+            <span class="loader"></span>
+        </div>
+    </div>
+    <div class="popup-newsletter-active popup-newsletter-wrap show">
+        <div class="popup-newsletter">
+            <button class="popup-newsletter-closer"><i class="fal fa-times"></i></button>
+            <div class="newsletter-img">
+                <img src="{% static 'assets/img/banner/popup-banner-1.jpg' %}" alt="Banner">
+            </div>
+            <div class="newsletter-content">
+                <span class="newsletter-subtitle">Newsletter</span>
+                <h2 class="newsletter-title h3">Be The First To Know</h2>
+                <p class="newsletter-text">Sign up for emails to get our latest updates</p>
+                <input type="text" class="form-control" placeholder="Your Email Address">
+                <button class="vs-btn style7">Subscribe Now</button>
+            </div>
+        </div>
+    </div>
+    <!--==============================
+    Popup Search Box
+    ============================== -->
+    <div class="popup-search-box d-none d-lg-block  ">
+        <button class="searchClose border-theme text-theme"><i class="fal fa-times"></i></button>
+        <form action="#">
+            <input type="text" class="border-theme" placeholder="What are you looking for">
+            <button type="submit"><i class="fal fa-search"></i></button>
+        </form>
+    </div>
+    <!--==============================
+    Mobile Menu
+  ============================== -->
+    <div class="vs-menu-wrapper">
+        <div class="vs-menu-area text-center">
+            <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
+            <div class="mobile-logo">
+                <a href="index.html"><img src="{% static 'assets/img/logo-mobile.png' %}" alt="Vendora"></a>
+            </div>
+            <div class="vs-mobile-menu">
+                <ul>
+                    <li class="menu-item-has-children">
+                        <a href="index.html">Home</a>
+                        <ul class="sub-menu">
+                            <li><a href="index.html">Home v1 - Fashion</a></li>
+                            <li><a href="index-2.html">Home v2 - Electronic</a></li>
+                            <li><a href="index-3.html">Home v3 - Organic Food</a></li>
+                            <li><a href="index-4.html">Home v4 - Furniture</a></li>
+                            <li><a href="index-5.html">Home v5 - Wine</a></li>
+                            <li><a href="index-6.html">Home v6 - Shoes</a></li>
+                            <li><a href="index-7.html">Home v7 - Interior Furniture</a></li>
+                            <li><a href="index-8.html">Home v8 - Bags & Eyeware</a></li>
+                            <li><a href="index-9.html">Home v9 - Jewellery & Watches</a></li>
+                            <li><a href="index-10.html">Home v10 - Market</a></li>
+                            <li><a href="index-11.html">Home v11 - Medical</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="blog.html">Blog</a>
+                        <ul class="sub-menu">
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="blog-details.html">Blog Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="blog.html">Shop</a>
+                        <ul class="sub-menu">
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="shop-details.html">Shop Details</a></li>
+                            <li><a href="cart.html">Shopping Cart</a></li>
+                            <li><a href="checkout.html">Check Out</a></li>
+                            <li><a href="login.html">Login Page</a></li>
+                            <li><a href="signup.html">Registration Page</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#">Pages</a>
+                        <ul class="sub-menu">
+                            <li><a href="faq.html">FAQ Page</a></li>
+                            <li><a href="error.html">Error Page</a></li>
+                            <li><a href="coming-soon.html">Coming Soon</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--==============================
+    Header Area
+    ==============================-->
+    {% include 'nav.html' %}
+    <!--==============================
+      Hero Area
+    ==============================-->
+    <div class="vs-hero-wrapper position-relative  ">
+        <div class="vs-hero-carousel" data-height="700" data-container="1900" data-global-bg="#f4f7f2">
+            <!-- Slide 1-->
+            <div class="ls-slide" data-ls=" duration:12000; transition2d:5; transitionduration:2000; kenburnsscale:1.2;">
+                <img width="1241" height="441" src="{% static '' %}assets/img/hero/hero-3-1-2.png" class="ls-l" alt="Hero Image 2" style="top:100px; left:637px; background-size:inherit; background-position:inherit;" data-ls="durationin:1500; delayin:1000; easingin:easeOutQuint; durationout:1500; startatout:slidechangeonly + 800; easingout:easeOutQuint; parallax:true; parallaxlevel:8;">
+                <img width="315" height="585" src="{% static '' %}assets/img/hero/hero-3-1.png" class="ls-l" alt="hero Image" style="top:45px; left:1175px; background-size:inherit; background-position:inherit;" data-ls="offsetyin:top; durationin:1500; easingin:easeOutQuint; rotatein:30; offsetyout:bottom; durationout:1500; easingout:easeOutQuint; rotateout:-30; parallax:true; parallaxlevel:-8;">
+                <p style="top:188px; left:360px; font-weight:600; background-size:inherit; background-position:inherit; font-size:16px; color:#2c2c2c; font-family:Jost; letter-spacing:3px;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:-50; durationin:1200; delayin:900; easingin:easeOutQuint; offsetyout:-90; durationout:1200; easingout:easeOutQuint;">Fresh Food</p>
+                <div style="top:216px; left:360px; font-weight:500; background-size:inherit; background-position:inherit; font-size:80px; font-family:Jost; color:#2c2c2c;" class="ls-l ls-hide-phone" data-ls="delayin:800; easingin:easeOutQuint; startatout:slidechangeonly + -400;"><span style=" color: #ffa800;">Tasty</span> &amp; Healthy</div>
+                <p style="top:233px; left:360px; font-weight:500; background-size:inherit; background-position:inherit; background-color:#2c2c2c; width:540px; height:87px; font-size:10px;" class="ls-l ls-hide-phone" data-ls="easingin:easeOutQuint; widthin:0; loop:true; loopduration:800; loopstartat:allinend + 0; loopeasing:easeOutQuint; loopscalex:0; looptransformorigin:100% 50% 0; loopcount:1;"></p>
+                <div style="top:310px; left:360px; font-weight:500; background-size:inherit; background-position:inherit; font-size:80px; font-family:Jost; color:#2c2c2c;" class="ls-l ls-hide-phone" data-ls="delayin:800; startatout:slidechangeonly + -400;">Organic <span style=" color: #ffa800;">Food</span></div>
+                <p style="top:327px; left:360px; font-weight:500; background-size:inherit; background-position:inherit; background-color:#ffa800; width:485px; height:88px; font-size:10px;" class="ls-l ls-hide-phone" data-ls="delayin:400; easingin:easeOutQuint; widthin:0; loop:true; loopduration:800; loopstartat:allinend + 100; loopeasing:easeOutQuint; loopscalex:0; looptransformorigin:100% 50% 0; loopcount:1;"></p>
+                <div style="top:454px; left:360px; background-size:inherit; background-position:inherit; font-family:Jost;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:70; durationin:1200; delayin:1000;"><a href="shop.html" class="line-btn ">Shop Now</a></div>
+                <p style="top:148px; left:360px; font-weight:600; background-size:inherit; background-position:inherit; color:#2c2c2c; font-family:Jost; letter-spacing:3px; font-size:42px;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetyin:-50; durationin:1200; delayin:900; easingin:easeOutQuint; offsetyout:-90; durationout:1200; easingout:easeOutQuint;">Fresh Food</p>
+                <div style="top:470px; left:360px; background-size:inherit; background-position:inherit; font-family:Jost;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetyin:70; durationin:1200; delayin:1000;"><a href="shop.html" class="line-btn ">Shop Now</a></div>
+                <div style="top:250px; left:150px; font-weight:500; background-size:inherit; background-position:inherit; font-size:120px; font-family:Jost; color:#2c2c2c;" class="ls-l ls-hide-desktop ls-hide-tablet" data-ls="delayin:800; startatout:slidechangeonly + -400;">Organic <span style=" color: #ffa800;">Food</span></div>
+                <div style="top:80px; left:150px; font-weight:500; background-size:inherit; background-position:inherit; font-size:120px; font-family:Jost; color:#2c2c2c;" class="ls-l ls-hide-desktop ls-hide-tablet" data-ls="delayin:800; easingin:easeOutQuint; startatout:slidechangeonly + -400;"><span style=" color: #ffa800;">Tasty</span> &amp; Healthy</div>
+                <div style="top:480px; left:150px; background-size:inherit; background-position:inherit; font-family:Jost;" class="ls-l ls-hide-desktop ls-hide-tablet" data-ls="offsetyin:70; durationin:1200; delayin:1000;"><a href="shop.html" class="line-btn line-btn-mobile ">Shop Now</a></div>
+            </div>
+            <!-- Slide 2-->
+            <div class="ls-slide" data-ls=" duration:12000; transition2d:5; transitionduration:2000; kenburnsscale:1.2;">
+                <img width="1241" height="441" src="{% static '' %}assets/img/hero/hero-3-1-2.png" class="ls-l" alt="Hero Image 2" style="top:100px; left:637px; background-size:inherit; background-position:inherit;" data-ls="durationin:1500; delayin:1000; easingin:easeOutQuint; durationout:1500; startatout:slidechangeonly + 800; easingout:easeOutQuint; parallax:true; parallaxlevel:8;">
+                <img width="608" height="476" src="{% static '' %}assets/img/hero/hero-3-2.png" class="ls-l" alt="Hero image" style="top:80px; left:1075px; background-size:inherit; background-position:inherit;" data-ls="offsetyin:top; durationin:1500; easingin:easeOutQuint; rotatein:30; offsetyout:bottom; durationout:1500; easingout:easeOutQuint; rotateout:-30; parallax:true; parallaxlevel:-8;">
+                <p style="top:188px; left:360px; font-weight:600; background-size:inherit; background-position:inherit; font-size:16px; color:#2c2c2c; font-family:Jost; letter-spacing:3px;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:-50; durationin:1200; delayin:900; easingin:easeOutQuint; offsetyout:-90; durationout:1200; easingout:easeOutQuint;">Organic Food</p>
+                <div style="top:216px; left:360px; font-weight:500; background-size:inherit; background-position:inherit; font-size:80px; font-family:Jost; color:#2c2c2c;" class="ls-l ls-hide-phone" data-ls="delayin:800; easingin:easeOutQuint; startatout:slidechangeonly + -400;"><span style=" color: #ffa800;">Leafy</span> &amp; Greens</div>
+                <p style="top:233px; left:360px; font-weight:500; background-size:inherit; background-position:inherit; background-color:#2c2c2c; width:545px; height:87px; font-size:10px;" class="ls-l ls-hide-phone" data-ls="easingin:easeOutQuint; widthin:0; loop:true; loopduration:800; loopstartat:allinend + 0; loopeasing:easeOutQuint; loopscalex:0; looptransformorigin:100% 50% 0; loopcount:1;"></p>
+                <div style="top:310px; left:360px; font-weight:500; background-size:inherit; background-position:inherit; font-size:80px; font-family:Jost; color:#2c2c2c;" class="ls-l ls-hide-phone" data-ls="delayin:800; startatout:slidechangeonly + -400;">Healthy <span style=" color: #ffa800;">Fruit</span></div>
+                <p style="top:327px; left:360px; font-weight:500; background-size:inherit; background-position:inherit; background-color:#ffa800; width:450px; height:88px; font-size:10px;" class="ls-l ls-hide-phone" data-ls="delayin:400; easingin:easeOutQuint; widthin:0; loop:true; loopduration:800; loopstartat:allinend + 100; loopeasing:easeOutQuint; loopscalex:0; looptransformorigin:100% 50% 0; loopcount:1;"></p>
+                <div style="top:454px; left:360px; background-size:inherit; background-position:inherit; font-family:Jost;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:70; durationin:1200; delayin:1000;"><a href="shop.html" class="line-btn ">Shop Now</a></div>
+                <p style="top:148px; left:360px; font-weight:600; background-size:inherit; background-position:inherit; color:#2c2c2c; font-family:Jost; letter-spacing:3px; font-size:42px;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetyin:-50; durationin:1200; delayin:900; easingin:easeOutQuint; offsetyout:-90; durationout:1200; easingout:easeOutQuint;">Organic Food</p>
+                <div style="top:470px; left:360px; background-size:inherit; background-position:inherit; font-family:Jost;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetyin:70; durationin:1200; delayin:1000;"><a href="shop.html" class="line-btn ">Shop Now</a></div>
+                <div style="top:250px; left:150px; font-weight:500; background-size:inherit; background-position:inherit; font-size:120px; font-family:Jost; color:#2c2c2c;" class="ls-l ls-hide-desktop ls-hide-tablet" data-ls="delayin:800; startatout:slidechangeonly + -400;">Healthy <span style=" color: #ffa800;">Fruit</span></div>
+                <div style="top:80px; left:150px; font-weight:500; background-size:inherit; background-position:inherit; font-size:120px; font-family:Jost; color:#2c2c2c;" class="ls-l ls-hide-desktop ls-hide-tablet" data-ls="delayin:800; easingin:easeOutQuint; startatout:slidechangeonly + -400;"><span style=" color: #ffa800;">Leafy</span> &amp; Greens</div>
+                <div style="top:480px; left:150px; background-size:inherit; background-position:inherit; font-family:Jost;" class="ls-l ls-hide-desktop ls-hide-tablet" data-ls="offsetyin:70; durationin:1200; delayin:1000;"><a href="shop.html" class="line-btn line-btn-mobile ">Shop Now</a></div>
+            </div>
+            <!-- Slide 3-->
+            <div class="ls-slide" data-ls=" duration:12000; transition2d:5; transitionduration:2000; kenburnsscale:1.2;">
+                <img width="1241" height="441" src="{% static '' %}assets/img/hero/hero-3-1-2.png" class="ls-l" alt="Hero Image 2" style="top:100px; left:637px; background-size:inherit; background-position:inherit;" data-ls="durationin:1500; delayin:1000; easingin:easeOutQuint; durationout:1500; startatout:slidechangeonly + 800; easingout:easeOutQuint; parallax:true; parallaxlevel:8;">
+                <img width="542" height="397" src="{% static '' %}assets/img/hero/hero-3-3.png" class="ls-l" alt="" style="top:100px; left:1076px; background-size:inherit; background-position:inherit;" data-ls="offsetyin:top; durationin:1500; easingin:easeOutQuint; rotatein:30; offsetyout:bottom; durationout:1500; easingout:easeOutQuint; rotateout:-30; parallax:true; parallaxlevel:-8;">
+                <p style="top:188px; left:360px; font-weight:600; background-size:inherit; background-position:inherit; font-size:16px; color:#2c2c2c; font-family:Jost; letter-spacing:3px;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:-50; durationin:1200; delayin:900; easingin:easeOutQuint; offsetyout:-90; durationout:1200; easingout:easeOutQuint;">Natural Food</p>
+                <div style="top:216px; left:360px; font-weight:500; background-size:inherit; background-position:inherit; font-size:80px; font-family:Jost; color:#2c2c2c;" class="ls-l ls-hide-phone" data-ls="delayin:800; easingin:easeOutQuint; startatout:slidechangeonly + -400;"><span style=" color: #ffa800;">Natural</span> &amp; Fresh</div>
+                <p style="top:233px; left:360px; font-weight:500; background-size:inherit; background-position:inherit; background-color:#2c2c2c; width:555px; height:87px; font-size:10px;" class="ls-l ls-hide-phone" data-ls="easingin:easeOutQuint; widthin:0; loop:true; loopduration:800; loopstartat:allinend + 0; loopeasing:easeOutQuint; loopscalex:0; looptransformorigin:100% 50% 0; loopcount:1;"></p>
+                <div style="top:310px; left:360px; font-weight:500; background-size:inherit; background-position:inherit; font-size:80px; font-family:Jost; color:#2c2c2c;" class="ls-l ls-hide-phone" data-ls="delayin:800; startatout:slidechangeonly + -400;">Vegetable <span style=" color: #ffa800;">Sale</span></div>
+                <p style="top:327px; left:360px; font-weight:500; background-size:inherit; background-position:inherit; background-color:#ffa800; width:526px; height:88px; font-size:10px;" class="ls-l ls-hide-phone" data-ls="delayin:400; easingin:easeOutQuint; widthin:0; loop:true; loopduration:800; loopstartat:allinend + 100; loopeasing:easeOutQuint; loopscalex:0; looptransformorigin:100% 50% 0; loopcount:1;"></p>
+                <div style="top:454px; left:360px; background-size:inherit; background-position:inherit; font-family:Jost;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:70; durationin:1200; delayin:1000;"><a href="shop.html" class="line-btn ">Shop Now</a></div>
+                <p style="top:148px; left:360px; font-weight:600; background-size:inherit; background-position:inherit; color:#2c2c2c; font-family:Jost; letter-spacing:3px; font-size:42px;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetyin:-50; durationin:1200; delayin:900; easingin:easeOutQuint; offsetyout:-90; durationout:1200; easingout:easeOutQuint;">Natural Food</p>
+                <div style="top:470px; left:360px; background-size:inherit; background-position:inherit; font-family:Jost;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetyin:70; durationin:1200; delayin:1000;"><a href="shop.html" class="line-btn ">Shop Now</a></div>
+                <div style="top:250px; left:150px; font-weight:500; background-size:inherit; background-position:inherit; font-size:120px; font-family:Jost; color:#2c2c2c;" class="ls-l ls-hide-desktop ls-hide-tablet" data-ls="delayin:800; startatout:slidechangeonly + -400;">Vegetable <span style=" color: #ffa800;">Sale</span></div>
+                <div style="top:80px; left:150px; font-weight:500; background-size:inherit; background-position:inherit; font-size:120px; font-family:Jost; color:#2c2c2c;" class="ls-l ls-hide-desktop ls-hide-tablet" data-ls="delayin:800; easingin:easeOutQuint; startatout:slidechangeonly + -400;"><span style=" color: #ffa800;">Natural</span> &amp; Fresh</div>
+                <div style="top:480px; left:150px; background-size:inherit; background-position:inherit; font-family:Jost;" class="ls-l ls-hide-desktop ls-hide-tablet" data-ls="offsetyin:70; durationin:1200; delayin:1000;"><a href="shop.html" class="line-btn line-btn-mobile ">Shop Now</a></div>
+            </div>
+        </div>
+    </div>
+    <!--==============================
+    Banner Area
+    ==============================-->
+    <section class="space-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-30">
+                    <div class="banner_style5 banner_long" data-bg-src="{% static 'assets/img/banner/long-banner-1-1.jpg' %}">
+                        <div class="banner_body">
+                            <h3 class="banner_title"><a href="shop.html" class="text-inherit">Get 10% off on <br> Vegetables</a></h3>
+                            <p class="banner_text">Sed gravida sem fringilla dui egestas, faucibus porttitor quam porta. Morbi nisl ligula, mollis eu maximus et, accumsan ut massa. Nunc tincidunt, orci sit amet mollis ultrices</p>
+                            <a href="shop.html" class="line-btn">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="banner_style5 right_align mb-30" data-bg-src="{% static 'assets/img/banner/banner-4-1.jpg' %}">
+                        <div class="banner_body">
+                            <h3 class="banner_title"><a href="shop.html" class="text-inherit">Get garden <br> fresh fruits</a></h3>
+                            <p class="banner_label">Trending 2022</p>
+                            <a href="shop.html" class="line-btn">Shop Now</a>
+                        </div>
+                    </div>
+                    <div class="banner_style5 right_align mb-30" data-bg-src="{% static 'assets/img/banner/banner-4-2.jpg' %}">
+                        <div class="banner_body">
+                            <h3 class="banner_title"><a href="shop.html" class="text-inherit">Stoberry Juice</a></h3>
+                            <p class="banner_label">100% Pure Natural Friut Juice</p>
+                            <a href="shop.html" class="line-btn">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==============================
+    Category Area  
+    ==============================-->
+    <section class="position-relative space-extra-top">
+        <div class="cat-shape-1 d-none d-xxl-block"><img src="{% static 'assets/img/icon/cat-shape-1-1.png' %}" alt="image"></div>
+        <div class="container">
+            <div class="title-area text-center">
+                <h2 class="sec-title">Our Products</h2>
+                <p class="sub-title fs-xs">Our campaigns, the latest trends and new collections</p>
+                <div class="sec-line"></div>
+            </div>
+            <div class="row vs-carousel gx-10 cat-media_slider" data-slide-show="5" data-lg-slide-show="4" data-md-slide-show="3" data-sm-slide-show="2" data-xs-slide-show="2" data-arrows="true">
+                <div class="col-xl-3">
+                    <div class="cat-media">
+                        <span class="badge">8</span>
+                        <div class="cat-media_icon">
+                            <a href="shop.html"><img src="{% static 'assets/img/icon/cat-1-7.png' %}" alt="Cat Icon"></a>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="cat-media_cat"><a href="shop.html" class="text-inherit">Food & Drinks</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="cat-media">
+                        <span class="badge">8</span>
+                        <div class="cat-media_icon">
+                            <a href="shop.html"><img src="{% static 'assets/img/icon/cat-1-8.png' %}" alt="Cat Icon"></a>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="cat-media_cat"><a href="shop.html" class="text-inherit">Vegetables</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="cat-media">
+                        <span class="badge">8</span>
+                        <div class="cat-media_icon">
+                            <a href="shop.html"><img src="{% static 'assets/img/icon/cat-1-9.png' %}" alt="Cat Icon"></a>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="cat-media_cat"><a href="shop.html" class="text-inherit">Dried Foods</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="cat-media">
+                        <span class="badge">8</span>
+                        <div class="cat-media_icon">
+                            <a href="shop.html"><img src="{% static 'assets/img/icon/cat-1-10.png' %}" alt="Cat Icon"></a>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="cat-media_cat"><a href="shop.html" class="text-inherit">Bread & Cake</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="cat-media">
+                        <span class="badge">8</span>
+                        <div class="cat-media_icon">
+                            <a href="shop.html"><img src="{% static 'assets/img/icon/cat-1-11.png' %}" alt="Cat Icon"></a>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="cat-media_cat"><a href="shop.html" class="text-inherit">Fish & Meat</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="cat-media">
+                        <span class="badge">8</span>
+                        <div class="cat-media_icon">
+                            <a href="shop.html"><img src="{% static 'assets/img/icon/cat-1-12.png' %}" alt="Cat Icon"></a>
+                        </div>
+                        <div class="media-body">
+                            <h3 class="cat-media_cat"><a href="shop.html" class="text-inherit">Organic Food</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==============================
+    Featured Products Area
+    ==============================-->
+    <section class="space-style1-top space-extra-bottom">
+        <div class="container">
+            <div class="row vs-carousel gx-4" data-slide-show="4" data-lg-slide-show="3" data-md-slide-show="3" data-sm-slide-show="3" data-arrows="true" id="s_25645">
+                <div class="col-xl-3">
+                    <div class="vs-product product_layout1 style3">
+                        <div class="product-img">
+                            <a href="shop-details.html"><img src="{% static 'assets/img/featued/featued-4-1.jpg' %}" alt="featued"></a>
+                            <div class="actions">
+                                <a href="cart.html" class="icon-btn style2"><i class="fal fa-shopping-bag"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title"><a href="shop-details.html" class="text-inherit">Bassilia</a></h3>
+                            <span class="product-price">$299.90</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="vs-product product_layout1 style3">
+                        <div class="product-img">
+                            <a href="shop-details.html"><img src="{% static 'assets/img/featued/featued-4-2.jpg' %}" alt="featued"></a>
+                            <div class="actions">
+                                <a href="cart.html" class="icon-btn style2"><i class="fal fa-shopping-bag"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title"><a href="shop-details.html" class="text-inherit">Spruce</a></h3>
+                            <span class="product-price">$188.90 <del>$390.00</del></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="vs-product product_layout1 style3">
+                        <div class="product-img">
+                            <a href="shop-details.html"><img src="{% static 'assets/img/featued/featued-4-3.jpg' %}" alt="featued"></a>
+                            <div class="actions">
+                                <a href="cart.html" class="icon-btn style2"><i class="fal fa-shopping-bag"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title"><a href="shop-details.html" class="text-inherit">Green Springs</a></h3>
+                            <span class="product-price">$144.90</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="vs-product product_layout1 style3">
+                        <div class="product-img">
+                            <a href="shop-details.html"><img src="{% static 'assets/img/featued/featued-4-4.jpg' %}" alt="featued"></a>
+                            <div class="actions">
+                                <a href="cart.html" class="icon-btn style2"><i class="fal fa-shopping-bag"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title"><a href="shop-details.html" class="text-inherit">Tree Tops</a></h3>
+                            <span class="product-price">$722.90</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="vs-product product_layout1 style3">
+                        <div class="product-img">
+                            <a href="shop-details.html"><img src="{% static 'assets/img/featued/featued-4-5.jpg' %}" alt="featued"></a>
+                            <div class="actions">
+                                <a href="cart.html" class="icon-btn style2"><i class="fal fa-shopping-bag"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title"><a href="shop-details.html" class="text-inherit">Hand Picked</a></h3>
+                            <span class="product-price">$688.90</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==============================
+    Best Deals Area
+    ==============================-->
+    <section class="space-top space-extra-bottom" data-bg-src="{% static 'assets/img/about/about-1-2.png' %}">
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-md-6 col-xl-auto">
+                    <div class="img">
+                        <img src="{% static 'assets/img/about/about-1-1.png' %}" alt="About Image">
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-6">
+                    <div class="discount-content pt-lg-4 pt-xl-0 mb-30 mb-lg-0">
+                        <span class="discount-label mb-2">Limited Time Offer!</span>
+                        <div class="row">
+                            <div class="col-xl-10">
+                                <h2 class="discount-title-main text-uppercase">Special discount for all <span class="fw-light text-theme">food products</span></h2>
+                            </div>
+                        </div>
+                        <h2 class="discount-title mb-4 pb-1">with <span class="text-theme">promot code</span></h2>
+                        <ul class="offer-counter counter-list mb-4" data-offer-date="12/08/2023">
+                            <li>
+                                <div class="day count-number ">00</div>
+                                <span class="count-name">Days</span>
+                            </li>
+                            <li>
+                                <div class="hour count-number ">00</div>
+                                <span class="count-name">Hours</span>
+                            </li>
+                            <li>
+                                <div class="minute count-number ">00</div>
+                                <span class="count-name">Minutes</span>
+                            </li>
+                            <li>
+                                <div class="seconds count-number ">00</div>
+                                <span class="count-name">Seconds</span>
+                            </li>
+                        </ul>
+                        <a href="shop.html" class="line-btn">View Offer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==============================
+    Product Area
+    ==============================-->
+    <section class="vs-product-wrapper space-top">
+        <div class="container">
+            <div class="title-area">
+                <div class="row justify-content-between align-items-center text-center text-md-start">
+                    <div class="col-md-auto">
+                        <h2 class="sec-title">Trending Products</h2>
+                        <p class="sec-title">Our campaigns, the latest trends and new collections</p>
+                        <div class="sec-line"></div>
+                    </div>
+                    <div class="col-md-auto mt-20 mt-md-0">
+                        <button data-slick-prev="#s_545" class="icon-btn style4 me-2"><i class="far fa-chevron-left"></i></button>
+                        <button data-slick-next="#s_545" class="icon-btn style4"><i class="far fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row vs-carousel" data-slide-show="3" data-lg-slide-show="2" data-xs-slide-show="1" data-rows="2" id="s_545">
+
+                <div class="col-xl-4">
+                    <div class="vs-product product_layout2">
+                        <div class="product-img">
+                            <a href="shop-details.html"><img src="{% static 'assets/img/product/p-1-1.png' %}" alt="Product Image"></a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title"><a href="shop-details.html">Pastures Viva Fresh</a></h3>
+                            <p class="price">$210.90 <del>$355</del></p>
+                            <div class="product-rating">
+                                <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5"><span style="width:100%">Rated <strong class="rating">5.00</strong> out of 5</span></div>
+                            </div>
+                            <div class="actions">
+                                <a href="cart.html" class="icon-btn style2"><i class="fal fa-shopping-cart"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4">
+                    <div class="vs-product product_layout2">
+                        <div class="product-img">
+                            <a href="shop-details.html"><img src="{% static 'assets/img/product/p-1-2.png' %}" alt="Product Image"></a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title"><a href="shop-details.html">Wholesome Organics</a></h3>
+                            <p class="price">$544.90 <del>$854</del></p>
+                            <div class="product-rating">
+                                <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5"><span style="width:100%">Rated <strong class="rating">5.00</strong> out of 5</span></div>
+                            </div>
+                            <div class="actions">
+                                <a href="cart.html" class="icon-btn style2"><i class="fal fa-shopping-cart"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4">
+                    <div class="vs-product product_layout2">
+                        <div class="product-img">
+                            <a href="shop-details.html"><img src="{% static 'assets/img/product/p-1-3.png' %}" alt="Product Image"></a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title"><a href="shop-details.html">Organics Nature’S Aroma</a></h3>
+                            <p class="price">$455.90 <del>$896</del></p>
+                            <div class="product-rating">
+                                <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5"><span style="width:100%">Rated <strong class="rating">5.00</strong> out of 5</span></div>
+                            </div>
+                            <div class="actions">
+                                <a href="cart.html" class="icon-btn style2"><i class="fal fa-shopping-cart"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4">
+                    <div class="vs-product product_layout2">
+                        <div class="product-img">
+                            <a href="shop-details.html"><img src="{% static 'assets/img/product/p-1-4.png' %}" alt="Product Image"></a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title"><a href="shop-details.html">Lavender Green Springs</a></h3>
+                            <p class="price">$442.90</p>
+                            <div class="product-rating">
+                                <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5"><span style="width:100%">Rated <strong class="rating">5.00</strong> out of 5</span></div>
+                            </div>
+                            <div class="actions">
+                                <a href="cart.html" class="icon-btn style2"><i class="fal fa-shopping-cart"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4">
+                    <div class="vs-product product_layout2">
+                        <div class="product-img">
+                            <a href="shop-details.html"><img src="{% static 'assets/img/product/p-1-5.png' %}" alt="Product Image"></a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title"><a href="shop-details.html">Scenario Healthy Cells</a></h3>
+                            <p class="price">$787.90</p>
+                            <div class="product-rating">
+                                <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5"><span style="width:100%">Rated <strong class="rating">5.00</strong> out of 5</span></div>
+                            </div>
+                            <div class="actions">
+                                <a href="cart.html" class="icon-btn style2"><i class="fal fa-shopping-cart"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4">
+                    <div class="vs-product product_layout2">
+                        <div class="product-img">
+                            <a href="shop-details.html"><img src="{% static 'assets/img/product/p-1-6.png' %}" alt="Product Image"></a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title"><a href="shop-details.html">Like Healthy Cells</a></h3>
+                            <p class="price">$365</p>
+                            <div class="product-rating">
+                                <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5"><span style="width:100%">Rated <strong class="rating">5.00</strong> out of 5</span></div>
+                            </div>
+                            <div class="actions">
+                                <a href="cart.html" class="icon-btn style2"><i class="fal fa-shopping-cart"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4">
+                    <div class="vs-product product_layout2">
+                        <div class="product-img">
+                            <a href="shop-details.html"><img src="{% static 'assets/img/product/p-1-7.png' %}" alt="Product Image"></a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title"><a href="shop-details.html">Future Choose Organic</a></h3>
+                            <p class="price">$210.90 <del>$355</del></p>
+                            <div class="product-rating">
+                                <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5"><span style="width:100%">Rated <strong class="rating">5.00</strong> out of 5</span></div>
+                            </div>
+                            <div class="actions">
+                                <a href="cart.html" class="icon-btn style2"><i class="fal fa-shopping-cart"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4">
+                    <div class="vs-product product_layout2">
+                        <div class="product-img">
+                            <a href="shop-details.html"><img src="{% static 'assets/img/product/p-1-8.png' %}" alt="Product Image"></a>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title"><a href="shop-details.html">Moon Greenville Organic</a></h3>
+                            <p class="price">$788</p>
+                            <div class="product-rating">
+                                <div class="star-rating" role="img" aria-label="Rated 5.00 out of 5"><span style="width:100%">Rated <strong class="rating">5.00</strong> out of 5</span></div>
+                            </div>
+                            <div class="actions">
+                                <a href="cart.html" class="icon-btn style2"><i class="fal fa-shopping-cart"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--==============================
+    Featuers Area
+    ==============================-->
+    <section class="space-extra-top space-bottom">
+        <div class="container-lg">
+            <div class="title-area text-center">
+                <h2 class="sec-title">Why Choose Us</h2>
+                <p class="sub-title">Our campaigns, the latest trends and new collections</p>
+                <div class="sec-line"></div>
+            </div>
+            <div class="row justify-content-between z-index-common feature-padding">
+                <div class="col-6 col-lg-5 col-xl-4">
+                    <div class="feature_mock reverse">
+                        <div class="feature_mock_icon">
+                            <img src="{% static 'assets/img/icon/feature-3-1.png' %}" alt="Features Area">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="feature_mock_title fs-md">Natural Organic Fruits</h3>
+                            <p class="feature_mock_text">Lorem ipsum dolor consectetur adipisci Phasellus blandiingt.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-5 col-xl-4">
+                    <div class="feature_mock">
+                        <div class="feature_mock_icon">
+                            <img src="{% static 'assets/img/icon/feature-3-2.png' %}" alt="Features Area">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="feature_mock_title fs-md">100% Organic Juices</h3>
+                            <p class="feature_mock_text">Lorem ipsum dolor consectetur adipisci Phasellus blandiingt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="feature-middle-img text-center ">
+                <img src="{% static 'assets/img/about/why-choose-1-1.png' %}" alt="why choose image">
+                <div class="bg-shape"><img src="{% static 'assets/img/about/why-choose-1-2.png' %}" alt="About Bg image"></div>
+                <div class="bg-text"><img src="{% static 'assets/img/about/why-choose-1-3.png' %}" alt="About Bg image"></div>
+            </div>
+            <div class="row justify-content-between z-index-common">
+                <div class="col-6 col-lg-5 col-xl-4">
+                    <div class="feature_mock reverse">
+                        <div class="feature_mock_icon">
+                            <img src="{% static 'assets/img/icon/feature-3-3.png' %}" alt="Features Area">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="feature_mock_title fs-md">Natural Organic Tea</h3>
+                            <p class="feature_mock_text">Lorem ipsum dolor consectetur adipisci Phasellus blandiingt.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-5 col-xl-4">
+                    <div class="feature_mock">
+                        <div class="feature_mock_icon">
+                            <img src="{% static 'assets/img/icon/feature-3-4.png' %}" alt="Features Area">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="feature_mock_title fs-md">Fresh Vegetables</h3>
+                            <p class="feature_mock_text">Lorem ipsum dolor consectetur adipisci Phasellus blandiingt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div data-sec-pos="bottom-half" data-pos-for="#testimonial">
+        <div class="container">
+            <div class="video-box">
+                <img src="{% static 'assets/img/about/video-1-1.jpg' %}" alt="About Image">
+                <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="play-btn popup-video"><i class="fas fa-play"></i></a>
+            </div>
+        </div>
+    </div>
+    <!--==============================
+    Testimonial Area
+    ==============================-->
+    <section class="space-top space-extra-bottom" data-bg-src="{% static 'assets/img/bg/bg-1-1.jpg' %}" id="testimonial">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-6">
+                    <div class="vs-carousel" data-slide-show="1" data-fade="true" data-md-slide-show="1" data-sm-slide-show="1" data-xs-slide-show="1" data-arrows="true">
+                        <div class="testi_card">
+                            <div class="testi_card_quote"><img src="{% static 'assets/img/icon/quote-004.png' %}" alt="Quote Icon"></div>
+                            <p class="testi_card_text">Great for swimming and especially if there are rocks and uneven terrain. They stay snug on your feet while swimming and dry quickly. I wear them on my offshore fishing boat. Very comfortable.</p>
+                            <h5 class="testi_card_name">Harry Tube</h5>
+                            <div class="testi_card_avater">
+                                <img src="{% static '' %}assets/img/testimonial/avater-1-1.png" alt="Avater">
+                            </div>
+                        </div>
+                        <div class="testi_card">
+                            <div class="testi_card_quote"><img src="{% static 'assets/img/icon/quote-004.png' %}" alt="Quote Icon"></div>
+                            <p class="testi_card_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+                            <h5 class="testi_card_name">Harry Tube</h5>
+                            <div class="testi_card_avater">
+                                <img src="{% static 'assets/img/testimonial/avater-1-1.png' %}" alt="Avater">
+                            </div>
+                        </div>
+                        <div class="testi_card">
+                            <div class="testi_card_quote"><img src="{% static '' %}assets/img/icon/quote-004.png" alt="Quote Icon"></div>
+                            <p class="testi_card_text">The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their.</p>
+                            <h5 class="testi_card_name">Harry Tube</h5>
+                            <div class="testi_card_avater">
+                                <img src="{% static 'assets/img/testimonial/avater-1-1.png' %}" alt="Avater">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==============================
+    Features Area
+    ==============================-->
+    <section class="space-top space-extra-bottom">
+        <div class="container-lg">
+            <div class="row justify-content-between">
+                <div class="col-sm-4 col-md-4 col-lg-auto d-flex justify-content-center">
+                    <div class="feature_media">
+                        <div class="feature_media_icon">
+                            <img src="{% static 'assets/img/icon/feature-9-1.png' %}" alt="feature icon">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="feature_media_title">Free Shipping</h3>
+                            <p class="feature_media_text">Free shipping on all US order</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-auto d-flex justify-content-center">
+                    <div class="feature_media">
+                        <div class="feature_media_icon">
+                            <img src="{% static 'assets/img/icon/feature-9-2.png' %}" alt="feature icon">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="feature_media_title">Support 24/ 7</h3>
+                            <p class="feature_media_text">Contact us 24 hours a day</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-auto d-flex justify-content-center">
+                    <div class="feature_media">
+                        <div class="feature_media_icon">
+                            <img src="{% static 'assets/img/icon/feature-9-3.png' %}" alt="feature icon">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="feature_media_title">90 Days Return</h3>
+                            <p class="feature_media_text">If goods have problems</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==============================
+			Footer Area
+	==============================-->
+    <footer class="footer-wrapper footer-layout1">
+        <div class="widget-area">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-md-5 col-lg-3">
+                        <div class="widget footer-widget">
+                            <h3 class="widget_title">Contact Us</h3>
+                            <div class="vs-widget-about">
+                                <form action="#" class="footer-newsletter">
+                                    <p class="form-text">Get on the list so we can stay in touch</p>
+                                    <div class="form-group">
+                                        <input type="email" id="newsletteremail" name="newsletteremail" placeholder="Your email address">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                </form>
+                                <p class="footer-info"><i class="fas fa-paper-plane"></i><a class="text-inherit" href="mailto:Vendora@email.com">Vendora@email.com</a></p>
+                                <p class="footer-info"><i class="fas fa-phone-alt"></i><a class="text-inherit" href="tel:703-261-6660">703-261-6660</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto col-md-6 col-lg-auto offset-xl-1">
+                        <div class="widget widget_nav_menu  footer-widget">
+                            <h3 class="widget_title">Services</h3>
+                            <div class="menu-all-pages-container">
+                                <ul class="menu">
+                                    <li><a href="#">Track My Order</a></li>
+                                    <li><a href="#">Returns</a></li>
+                                    <li><a href="#">Shipping Terms</a></li>
+                                    <li><a href="#">Payment Policy</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto col-md-6 col-lg-auto">
+                        <div class="widget widget_nav_menu  footer-widget">
+                            <h3 class="widget_title">Follow Us On</h3>
+                            <div class="menu-all-pages-container">
+                                <ul class="menu">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i>Facebook</a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+                                    <li><a href="#"><i class="far fa-blog"></i>Bebo</a></li>
+                                    <li><a href="#"><i class="far fa-basketball-ball"></i>Dribvble</a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-auto">
+                        <div class="widget footer-widget">
+                            <h3 class="widget_title">Shop Address</h3>
+                            <div class="footer-map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115078.21247479583!2d-74.06078298144763!3d40.717427384710724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1636528338849!5m2!1sen!2sbd" width="400" height="135" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-wrap text-center">
+            <p class="mb-0"><i class="fal fa-copyright"></i> 2022 <a class="text-reset" href="index.html">Vendora</a>. All rights reserved by <a class="text-reset" href="https://themeforest.net/user/vecuro">Vecuro</a>.</p>
+        </div>
+    </footer>
+
+
+
+    <!--********************************
+			Code End  Here 
+	******************************** -->
+
+
+    <!-- Scroll To Top -->
+    <a href="#" class="scrollToTop scroll-btn"><i class="far fa-arrow-up"></i></a>
+
+{% endblock %}

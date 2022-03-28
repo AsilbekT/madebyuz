@@ -1,0 +1,1297 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <!--[if lte IE 9]>
+    	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+
+
+    <!--********************************
+   		Code Start From Here 
+	******************************** -->
+
+
+
+
+    <!--==============================
+     Preloader
+  ==============================-->
+    <div class="preloader  ">
+        <button class="vs-btn preloaderCls">Cancel Preloader </button>
+        <div class="preloader-inner">
+            <img src="assets/img/logo.png" alt="Vendora">
+            <span class="loader"></span>
+        </div>
+    </div>
+    <div class="popup-newsletter-active popup-newsletter-wrap show">
+        <div class="popup-newsletter">
+            <button class="popup-newsletter-closer"><i class="fal fa-times"></i></button>
+            <div class="newsletter-img">
+                <img src="assets/img/banner/popup-banner-1.jpg" alt="Banner">
+            </div>
+            <div class="newsletter-content">
+                <span class="newsletter-subtitle">Newsletter</span>
+                <h2 class="newsletter-title h3">Be The First To Know</h2>
+                <p class="newsletter-text">Sign up for emails to get our latest updates</p>
+                <input type="text" class="form-control" placeholder="Your Email Address">
+                <button class="vs-btn style7">Subscribe Now</button>
+            </div>
+        </div>
+    </div>
+    <!--==============================
+    Mobile Menu
+  ============================== -->
+    <div class="vs-menu-wrapper">
+        <div class="vs-menu-area text-center">
+            <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
+            <div class="mobile-logo">
+                <a href="index.html"><img src="assets/img/logo-mobile.png" alt="Vendora"></a>
+            </div>
+            <div class="vs-mobile-menu">
+                <ul>
+                    <li class="menu-item-has-children">
+                        <a href="index.html">Home</a>
+                        <ul class="sub-menu">
+                            <li><a href="index.html">Home v1 - Fashion</a></li>
+                            <li><a href="index-2.html">Home v2 - Electronic</a></li>
+                            <li><a href="index-3.html">Home v3 - Organic Food</a></li>
+                            <li><a href="index-4.html">Home v4 - Furniture</a></li>
+                            <li><a href="index-5.html">Home v5 - Wine</a></li>
+                            <li><a href="index-6.html">Home v6 - Shoes</a></li>
+                            <li><a href="index-7.html">Home v7 - Interior Furniture</a></li>
+                            <li><a href="index-8.html">Home v8 - Bags & Eyeware</a></li>
+                            <li><a href="index-9.html">Home v9 - Jewellery & Watches</a></li>
+                            <li><a href="index-10.html">Home v10 - Market</a></li>
+                            <li><a href="index-11.html">Home v11 - Medical</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="blog.html">Blog</a>
+                        <ul class="sub-menu">
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="blog-details.html">Blog Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="blog.html">Shop</a>
+                        <ul class="sub-menu">
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="shop-details.html">Shop Details</a></li>
+                            <li><a href="cart.html">Shopping Cart</a></li>
+                            <li><a href="checkout.html">Check Out</a></li>
+                            <li><a href="login.html">Login Page</a></li>
+                            <li><a href="signup.html">Registration Page</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#">Pages</a>
+                        <ul class="sub-menu">
+                            <li><a href="faq.html">FAQ Page</a></li>
+                            <li><a href="error.html">Error Page</a></li>
+                            <li><a href="coming-soon.html">Coming Soon</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--==============================
+        Header Area
+    ==============================-->
+    <header class="vs-header header-layout2">
+        <div class="header-top-notice">Today deal sale off <b>70%.</b> End in
+            <div class="notice-counter d-inline-block" data-offer-date="12/08/2023">
+                <b><span class="day"></span>Days :</b>
+                <b><span class="hour"></span>hours :</b>
+                <b><span class="minute"></span>min :</b>
+                <b><span class="seconds"></span>sec</b>
+            </div>
+            Hurry Up <i class="far fa-long-arrow-alt-right"></i>
+        </div>
+        <div class="container">
+            <div class="menu-top">
+                <div class="row align-items-center justify-content-center justify-content-md-between gx-80">
+                    <div class="col-auto">
+                        <div class="row gx-50">
+                            <div class="col-auto">
+                                <div class="header-info">
+                                    <div class="header-info_icon">
+                                        <img src="assets/img/icon/call-icon.png" alt="icon">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="header-info_link"><a href="tel:+1234567890" class="text-inherit">+123 456789 0</a></div>
+                                        <span class="header-info_label">Call Us Free</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="header-info">
+                                    <div class="header-info_icon">
+                                        <img src="assets/img/icon/mail-icon.png" alt="icon">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="header-info_link">Free Shipping</div>
+                                        <span class="header-info_label">on order over $300.0</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm mt-20 mt-md-0">
+                        <form action="#" class="header-form">
+                            <input type="text" placeholder="Product Search">
+                            <button type="button">Search</button>
+                            <i class="far fa-search"></i>
+                        </form>
+                    </div>
+                    <div class="col-auto  d-none d-lg-block">
+                        <div class="header-top-links">
+                            <ul>
+                                <li>
+                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-bs-toggle="dropdown" aria-expanded="false">Language</a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                        <li>
+                                            <a href="#">German</a>
+                                            <a href="#">French</a>
+                                            <a href="#">Italian</a>
+                                            <a href="#">Latvian</a>
+                                            <a href="#">Spanish</a>
+                                            <a href="#">Greek</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-expanded="false">Currency</a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+                                        <li><a href="#">AED</a></li>
+                                        <li><a href="#">BDT</a></li>
+                                        <li><a href="#">ERN</a></li>
+                                        <li><a href="#">EGP</a></li>
+                                        <li><a href="#">EUR</a></li>
+                                        <li><a href="#">GBP</a></li>
+                                        <li><a href="#">USD</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sticky-wrapper">
+            <div class="sticky-active">
+                <div class="container">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-4 col-sm-auto">
+                            <div class="header-logo py-4 py-lg-0">
+                                <a href="index.html"><img src="assets/img/logo.png" alt="Vendora"></a>
+                            </div>
+                        </div>
+                        <div class="col-auto ms-md-auto ms-lg-0">
+                            <nav class="main-menu menu-style2 d-none d-lg-block">
+                                <ul>
+                                    <li class="menu-item-has-children">
+                                        <a href="index.html">Home</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="index.html">Home v1 - Fashion</a></li>
+                                            <li><a href="index-2.html">Home v2 - Electronic</a></li>
+                                            <li><a href="index-3.html">Home v3 - Organic Food</a></li>
+                                            <li><a href="index-4.html">Home v4 - Furniture</a></li>
+                                            <li><a href="index-5.html">Home v5 - Wine</a></li>
+                                            <li><a href="index-6.html">Home v6 - Shoes</a></li>
+                                            <li><a href="index-7.html">Home v7 - Interior Furniture</a></li>
+                                            <li><a href="index-8.html">Home v8 - Bags & Eyeware</a></li>
+                                            <li><a href="index-9.html">Home v9 - Jewellery & Watches</a></li>
+                                            <li><a href="index-10.html">Home v10 - Market</a></li>
+                                            <li><a href="index-11.html">Home v11 - Medical</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="about.html">About</a>
+                                    </li>
+                                    <li class="menu-item-has-children">
+                                        <a href="blog.html">Blog</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="blog.html">Blog</a></li>
+                                            <li><a href="blog-details.html">Blog Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item-has-children mega-menu-wrap">
+                                        <a href="#">Pages</a>
+                                        <ul class="mega-menu">
+                                            <li><a href="shop.html">Pagelist 1</a>
+                                                <ul>
+                                                    <li><a href="index.html">Home v1 - Fashion</a></li>
+                                                    <li><a href="index-2.html">Home v2 - Electronic</a></li>
+                                                    <li><a href="index-3.html">Home v3 - Organic Food</a></li>
+                                                    <li><a href="index-4.html">Home v4 - Furniture</a></li>
+                                                    <li><a href="index-5.html">Home v5 - Wine</a></li>
+                                                    <li><a href="index-6.html">Home v6 - Shoes</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Pagelist 2</a>
+                                                <ul>
+                                                    <li><a href="index-7.html">Home v7 - Interior Furniture</a></li>
+                                                    <li><a href="index-8.html">Home v8 - Bags & Eyeware</a></li>
+                                                    <li><a href="index-9.html">Home v9 - Jewellery & Watches</a></li>
+                                                    <li><a href="index-10.html">Home v10 - Market</a></li>
+                                                    <li><a href="index-11.html">Home v11 - Medical</a></li>
+                                                    <li><a href="about.html">About Us</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Pagelist 3</a>
+                                                <ul>
+                                                    <li><a href="shop.html">Shop</a></li>
+                                                    <li><a href="shop-details.html">Shop Details</a></li>
+                                                    <li><a href="cart.html">Shopping Cart</a></li>
+                                                    <li><a href="checkout.html">Check Out</a></li>
+                                                    <li><a href="login.html">Login Page</a></li>
+                                                    <li><a href="signup.html">Registration Page</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Pagelist 4</a>
+                                                <ul>
+                                                    <li><a href="faq.html">FAQ Page</a></li>
+                                                    <li><a href="blog.html">Blog</a></li>
+                                                    <li><a href="blog-details.html">Blog Details</a></li>
+                                                    <li><a href="contact.html">Contact Us</a></li>
+                                                    <li><a href="error.html">Error Page</a></li>
+                                                    <li><a href="coming-soon.html">Coming Soon</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-auto">
+                            <div class="header-buttons">
+                                <a href="login.html"><i class="fal fa-user"></i></a>
+                                <a href="#" class="has-badge"><i class="fal fa-heart"></i><span class="badge">0</span></a>
+                                <div class="header-cart">
+                                    <a href="cart.html" class="has-badge"><i class="fal fa-shopping-bag"></i><span class="badge">0</span></a>
+                                    <div class="woocommerce widget_shopping_cart">
+                                        <div class="widget_shopping_cart_content">
+                                            <ul class="cart_list">
+                                                <li class="mini_cart_item">
+                                                    <a href="#" class="remove"><i class="far fa-times"></i></a>
+                                                    <a href="shop-details.html" class="img"><img src="assets/img/cart/cat-img-1.jpg" alt="Cart Image"></a>
+                                                    <a href="shop-details.html" class="product-title">Smart Watch</a>
+                                                    <span class="amount">$99.00</span>
+                                                    <div class="quantity">
+                                                        <button class="quantity-minus qut-btn"><i class="far fa-minus"></i></button>
+                                                        <input type="number" class="qty-input" value="1" min="1" max="99">
+                                                        <button class="quantity-plus qut-btn"><i class="far fa-plus"></i></button>
+                                                    </div>
+                                                    <div class="subtotal">
+                                                        <span>Subtotal:</span>
+                                                        <span class="amount">$99.00</span>
+                                                    </div>
+                                                </li>
+                                                <li class="mini_cart_item">
+                                                    <a href="#" class="remove"><i class="far fa-times"></i></a>
+                                                    <a href="shop-details.html" class="img"><img src="assets/img/cart/cat-img-2.jpg" alt="Cart Image"></a>
+                                                    <a href="shop-details.html" class="product-title">Boss Chair</a>
+                                                    <span class="amount">$80.00</span>
+                                                    <div class="quantity">
+                                                        <button class="quantity-minus qut-btn"><i class="far fa-minus"></i></button>
+                                                        <input type="number" class="qty-input" value="2" min="1" max="99">
+                                                        <button class="quantity-plus qut-btn"><i class="far fa-plus"></i></button>
+                                                    </div>
+                                                    <div class="subtotal">
+                                                        <span>Subtotal:</span>
+                                                        <span class="amount">$160.00</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <p class="total">
+                                                <strong>Subtotal:</strong>
+                                                <span class="amount">$259.00</span>
+                                            </p>
+                                            <p class="buttons">
+                                                <a href="cart.html" class="vs-btn">View cart</a>
+                                                <a href="checkout.html" class="vs-btn checkout">Checkout</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto d-block d-lg-none">
+                            <button class="vs-menu-toggle d-inline-block d-lg-none"><i class="fal fa-bars"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--==============================
+      Hero Area
+    ==============================-->
+    <section class="vs-hero-wrapper position-relative  ">
+        <div class="vs-hero-carousel" data-height="515" data-container="1900">
+            <!-- Slide 1-->
+            <div class="ls-slide" data-ls="bgcolor:#f5f5f5; duration:12000; transition2d:5; kenburnsscale:1.2;">
+                <img width="446" height="448" src="assets/img/hero/hero-2-1.jpg" class="ls-l" alt="hero image" style="top:20px; left:1020px; background-size:inherit; background-position:inherit;" data-ls="offsetyin:top; easingin:easeOutQuint; rotatein:30; offsetyout:bottom; durationout:1400; easingout:easeOutQuint; rotateout:-30; parallax:true; parallaxlevel:5; parallaxtype:3d;">
+                <div style="top:75px; left:435px; background-size:inherit; background-position:inherit;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:-50; durationin:1200; delayin:800; easingin:easeOutQuint; offsetxout:200; easingout:easeOutQuint;"><span class="tag-style1">Sale $100</span></div>
+                <p style="top:108px; left:435px; font-weight:600; background-size:inherit; background-position:inherit; font-size:16px; font-family:Jost; color:#2c2c2c; letter-spacing:2px;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:-50; durationin:1200; delayin:500; easingin:easeOutQuint; offsetxout:200; durationout:1300; startatout:slidechangeonly + ; easingout:easeOutQuint;">Get Ready For</p>
+                <h1 style="top:130px; left:435px; font-weight:700; background-size:inherit; background-position:inherit; font-size:36px; font-family:Jost; color:#2c2c2c;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetxin:-100; durationin:1200; offsetxout:100; easingout:easeOutQuint;">
+                    Up To 10% Off
+                </h1>
+                <h1 style="top:180px; left:435px; font-weight:700; background-size:inherit; background-position:inherit; font-size:36px; font-family:Jost; color:#2c2c2c;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetxin:-150; durationin:1300; delayin:300; easingin:easeOutQuint; offsetxout:150; durationout:1300; easingout:easeOutQuint;">
+                    Speakers
+                </h1>
+                <p style="top:241px; left:435px; background-size:inherit; background-position:inherit; font-size:14px; font-family:Jost; letter-spacing:1px; color:#2c2c2c;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:80; durationin:1500; delayin:500;">COMING JULY 2022</p>
+                <p style="top:267px; left:435px; background-size:inherit; background-position:inherit; font-size:14px; font-family:Jost; letter-spacing:1px; color:#2c2c2c;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:100; durationin:1500; delayin:700;">REGISTER YOUR INTEREST NOW</p>
+                <div style="top:310px; left:435px; background-size:inherit; background-position:inherit; font-family:Jost;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:70; durationin:1200; delayin:1000;"><a href="shop.html" class="line-btn ">Shop Now</a></div>
+                <div style="top:60px; left:435px; background-size:inherit; background-position:inherit;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetyin:-50; durationin:1200; delayin:800; easingin:easeOutQuint; offsetxout:200; easingout:easeOutQuint;"><span class="tag-style1">Sale $100</span></div>
+                <p style="top:140px; left:435px; font-weight:600; background-size:inherit; background-position:inherit; font-family:Jost; color:#2c2c2c; letter-spacing:2px; font-size:34px;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetyin:-50; durationin:1200; delayin:500; easingin:easeOutQuint; offsetxout:200; durationout:1300; startatout:slidechangeonly + ; easingout:easeOutQuint;">Get Ready For</p>
+                <h1 style="top:195px; left:435px; font-weight:700; background-size:inherit; background-position:inherit; font-family:Jost; color:#2c2c2c; font-size:50px;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetxin:-100; durationin:1200; offsetxout:100; easingout:easeOutQuint;">
+                    Up To 10% Off
+                </h1>
+                <h1 style="top:255px; left:435px; font-weight:700; background-size:inherit; background-position:inherit; font-size:50px; font-family:Jost; color:#2c2c2c;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetxin:-150; durationin:1300; delayin:300; easingin:easeOutQuint; offsetxout:150; durationout:1300; easingout:easeOutQuint;">
+                    Speakers
+                </h1>
+                <div style="top:360px; left:435px; background-size:inherit; background-position:inherit; font-family:Jost;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetyin:70; durationin:1200; delayin:1000;"><a href="shop.html" class="line-btn ">Shop Now</a></div>
+                <h1 style="top:50px; left:250px; font-weight:700; background-size:inherit; background-position:inherit; font-family:Jost; color:#2c2c2c; font-size:90px;" class="ls-l ls-hide-desktop ls-hide-tablet" data-ls="offsetxin:-100; durationin:1200; offsetxout:100; easingout:easeOutQuint;">
+                    Up To 10% Off
+                </h1>
+                <h1 style="top:170px; left:250px; font-weight:700; background-size:inherit; background-position:inherit; font-size:90px; font-family:Jost; color:#2c2c2c;" class="ls-l ls-hide-desktop ls-hide-tablet" data-ls="offsetxin:-150; durationin:1300; delayin:300; easingin:easeOutQuint; offsetxout:150; durationout:1300; easingout:easeOutQuint;">
+                    Speakers
+                </h1>
+                <div style="top:360px; left:250px; background-size:inherit; background-position:inherit; font-family:Jost;" class="ls-l ls-hide-desktop ls-hide-tablet" data-ls="offsetyin:70; durationin:1200; delayin:1000;"><a href="shop.html" class="line-btn line-btn-mobile">Shop Now</a></div>
+                <p style="top:390px; left:465px; font-weight:700; background-size:inherit; background-position:inherit; font-size:16px; font-family:Jost; color:#2c2c2c;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="durationin:1200; easingin:easeOutQuint; rotatexin:90; transformoriginin:50% 0% 0; durationout:1300; easingout:easeOutQuint; rotatexout:90; transformoriginout:50% 100% 0;">01</p>
+                <p style="top:390px; left:493px; font-weight:500; background-size:inherit; background-position:inherit; font-size:16px; font-family:Jost; color:#2c2c2c;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="static:forever;">/</p>
+                <p style="top:390px; left:512px; font-weight:500; background-size:inherit; background-position:inherit; font-size:16px; font-family:Jost; color:#2c2c2c;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="static:forever;">03</p>
+                <a class="ls-l ls-hide-tablet ls-hide-phone" href="#next" target="_self" data-ls="hover:true; hovercolor:#e1aa5e; static:forever;">
+                    <div style="top:390px; left:555px; background-size:inherit; background-position:inherit; font-size:20px; color:#2c2c2c;" class=""><i class="fas fa-caret-right"></i></div>
+                </a>
+                <a class="ls-l ls-hide-tablet ls-hide-phone" href="#prev" target="_self" data-ls="hover:true; hovercolor:#e1aa5e; static:forever;">
+                    <div style="top:390px; left:435px; background-size:inherit; background-position:inherit; font-size:20px; color:#2c2c2c;" class=""><i class="fas fa-caret-left"></i></div>
+                </a>
+            </div>
+            <!-- Slide 2-->
+            <div class="ls-slide" data-ls="bgcolor:#f5f5f5; duration:12000; transition2d:5; kenburnsscale:1.2;">
+                <img width="505" height="439" src="assets/img/hero/hero-2-2.png" class="ls-l" alt="hero image" style="top:20px; left:1020px; background-size:inherit; background-position:inherit;" data-ls="offsetyin:top; easingin:easeOutQuint; rotatein:30; offsetyout:bottom; durationout:1400; easingout:easeOutQuint; rotateout:-30; parallax:true; parallaxlevel:5; parallaxtype:3d;">
+                <div style="top:75px; left:435px; background-size:inherit; background-position:inherit;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:-50; durationin:1200; delayin:800; easingin:easeOutQuint; offsetxout:200; easingout:easeOutQuint;"><span class="tag-style1">Sale $200</span></div>
+                <p style="top:108px; left:435px; font-weight:600; background-size:inherit; background-position:inherit; font-size:16px; font-family:Jost; color:#2c2c2c; letter-spacing:2px;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:-50; durationin:1200; delayin:500; easingin:easeOutQuint; offsetxout:200; durationout:1300; startatout:slidechangeonly + ; easingout:easeOutQuint;">Get Ready For</p>
+                <h1 style="top:130px; left:435px; font-weight:700; background-size:inherit; background-position:inherit; font-size:36px; font-family:Jost; color:#2c2c2c;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetxin:-100; durationin:1200; offsetxout:100; easingout:easeOutQuint;">
+                    Family Package
+                </h1>
+                <h1 style="top:180px; left:435px; font-weight:700; background-size:inherit; background-position:inherit; font-size:36px; font-family:Jost; color:#2c2c2c;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetxin:-150; durationin:1300; delayin:300; easingin:easeOutQuint; offsetxout:150; durationout:1300; easingout:easeOutQuint;">
+                    Flash Sale
+                </h1>
+                <p style="top:241px; left:435px; background-size:inherit; background-position:inherit; font-size:14px; font-family:Jost; letter-spacing:1px; color:#2c2c2c;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:80; durationin:1500; delayin:500;">COMING JULY 2022</p>
+                <p style="top:267px; left:435px; background-size:inherit; background-position:inherit; font-size:14px; font-family:Jost; letter-spacing:1px; color:#2c2c2c;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:100; durationin:1500; delayin:700;">REGISTER YOUR INTEREST NOW</p>
+                <div style="top:310px; left:435px; background-size:inherit; background-position:inherit; font-family:Jost;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:70; durationin:1200; delayin:1000;"><a href="shop.html" class="line-btn ">Shop Now</a></div>
+                <div style="top:60px; left:435px; background-size:inherit; background-position:inherit;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetyin:-50; durationin:1200; delayin:800; easingin:easeOutQuint; offsetxout:200; easingout:easeOutQuint;"><span class="tag-style1">Sale $200</span></div>
+                <p style="top:140px; left:435px; font-weight:600; background-size:inherit; background-position:inherit; font-family:Jost; color:#2c2c2c; letter-spacing:2px; font-size:34px;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetyin:-50; durationin:1200; delayin:500; easingin:easeOutQuint; offsetxout:200; durationout:1300; startatout:slidechangeonly + ; easingout:easeOutQuint;">Get Ready For</p>
+                <h1 style="top:195px; left:435px; font-weight:700; background-size:inherit; background-position:inherit; font-family:Jost; color:#2c2c2c; font-size:50px;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetxin:-100; durationin:1200; offsetxout:100; easingout:easeOutQuint;">
+                    Family Package
+                </h1>
+                <h1 style="top:255px; left:435px; font-weight:700; background-size:inherit; background-position:inherit; font-size:50px; font-family:Jost; color:#2c2c2c;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetxin:-150; durationin:1300; delayin:300; easingin:easeOutQuint; offsetxout:150; durationout:1300; easingout:easeOutQuint;">
+                    Flash Sale
+                </h1>
+                <div style="top:360px; left:435px; background-size:inherit; background-position:inherit; font-family:Jost;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetyin:70; durationin:1200; delayin:1000;"><a href="shop.html" class="line-btn ">Shop Now</a></div>
+                <h1 style="top:50px; left:250px; font-weight:700; background-size:inherit; background-position:inherit; font-family:Jost; color:#2c2c2c; font-size:90px;" class="ls-l ls-hide-desktop ls-hide-tablet" data-ls="offsetxin:-100; durationin:1200; offsetxout:100; easingout:easeOutQuint;">
+                    Family Package
+                </h1>
+                <h1 style="top:170px; left:250px; font-weight:700; background-size:inherit; background-position:inherit; font-size:90px; font-family:Jost; color:#2c2c2c;" class="ls-l ls-hide-desktop ls-hide-tablet" data-ls="offsetxin:-150; durationin:1300; delayin:300; easingin:easeOutQuint; offsetxout:150; durationout:1300; easingout:easeOutQuint;">
+                    Flash Sale
+                </h1>
+                <div style="top:360px; left:250px; background-size:inherit; background-position:inherit; font-family:Jost;" class="ls-l ls-hide-desktop ls-hide-tablet" data-ls="offsetyin:70; durationin:1200; delayin:1000;"><a href="shop.html" class="line-btn line-btn-mobile">Shop Now</a></div>
+                <p style="top:390px; left:465px; font-weight:700; background-size:inherit; background-position:inherit; font-size:16px; font-family:Jost; color:#2c2c2c;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="durationin:1200; easingin:easeOutQuint; rotatexin:90; transformoriginin:50% 0% 0; durationout:1300; easingout:easeOutQuint; rotatexout:90; transformoriginout:50% 100% 0;">02</p>
+            </div>
+            <!-- Slide 3-->
+            <div class="ls-slide" data-ls="bgcolor:#f5f5f5; duration:12000; transition2d:5; kenburnsscale:1.2;">
+                <img width="569" height="367" src="assets/img/hero/hero-2-3.png" class="ls-l" alt="Hero image" style="top:20px; left:1020px; background-size:inherit; background-position:inherit;" data-ls="offsetyin:top; easingin:easeOutQuint; rotatein:30; offsetyout:bottom; durationout:1400; easingout:easeOutQuint; rotateout:-30; parallax:true; parallaxlevel:5; parallaxtype:3d;">
+                <div style="top:75px; left:435px; background-size:inherit; background-position:inherit;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:-50; durationin:1200; delayin:800; easingin:easeOutQuint; offsetxout:200; easingout:easeOutQuint;"><span class="tag-style1">Sale $199</span></div>
+                <p style="top:108px; left:435px; font-weight:600; background-size:inherit; background-position:inherit; font-size:16px; font-family:Jost; color:#2c2c2c; letter-spacing:2px;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:-50; durationin:1200; delayin:500; easingin:easeOutQuint; offsetxout:200; durationout:1300; startatout:slidechangeonly + ; easingout:easeOutQuint;">Get Ready For</p>
+                <h1 style="top:130px; left:435px; font-weight:700; background-size:inherit; background-position:inherit; font-size:36px; font-family:Jost; color:#2c2c2c;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetxin:-100; durationin:1200; offsetxout:100; easingout:easeOutQuint;">
+                    Ultra HD Sounds
+                </h1>
+                <h1 style="top:180px; left:435px; font-weight:700; background-size:inherit; background-position:inherit; font-size:36px; font-family:Jost; color:#2c2c2c;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetxin:-150; durationin:1300; delayin:300; easingin:easeOutQuint; offsetxout:150; durationout:1300; easingout:easeOutQuint;">
+                    Speakers
+                </h1>
+                <p style="top:241px; left:435px; background-size:inherit; background-position:inherit; font-size:14px; font-family:Jost; letter-spacing:1px; color:#2c2c2c;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:80; durationin:1500; delayin:500;">COMING JULY 2022</p>
+                <p style="top:267px; left:435px; background-size:inherit; background-position:inherit; font-size:14px; font-family:Jost; letter-spacing:1px; color:#2c2c2c;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:100; durationin:1500; delayin:700;">REGISTER YOUR INTEREST NOW</p>
+                <div style="top:310px; left:435px; background-size:inherit; background-position:inherit; font-family:Jost;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:70; durationin:1200; delayin:1000;"><a href="shop.html" class="line-btn ">Shop Now</a></div>
+                <div style="top:60px; left:435px; background-size:inherit; background-position:inherit;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetyin:-50; durationin:1200; delayin:800; easingin:easeOutQuint; offsetxout:200; easingout:easeOutQuint;"><span class="tag-style1">Sale $199</span></div>
+                <p style="top:140px; left:435px; font-weight:600; background-size:inherit; background-position:inherit; font-family:Jost; color:#2c2c2c; letter-spacing:2px; font-size:34px;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetyin:-50; durationin:1200; delayin:500; easingin:easeOutQuint; offsetxout:200; durationout:1300; startatout:slidechangeonly + ; easingout:easeOutQuint;">Get Ready For</p>
+                <h1 style="top:195px; left:435px; font-weight:700; background-size:inherit; background-position:inherit; font-family:Jost; color:#2c2c2c; font-size:50px;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetxin:-100; durationin:1200; offsetxout:100; easingout:easeOutQuint;">
+                    Ultra HD Sounds
+                </h1>
+                <h1 style="top:255px; left:435px; font-weight:700; background-size:inherit; background-position:inherit; font-size:50px; font-family:Jost; color:#2c2c2c;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetxin:-150; durationin:1300; delayin:300; easingin:easeOutQuint; offsetxout:150; durationout:1300; easingout:easeOutQuint;">
+                    Speakers
+                </h1>
+                <div style="top:360px; left:435px; background-size:inherit; background-position:inherit; font-family:Jost;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetyin:70; durationin:1200; delayin:1000;"><a href="shop.html" class="line-btn ">Shop Now</a></div>
+                <h1 style="top:50px; left:250px; font-weight:700; background-size:inherit; background-position:inherit; font-family:Jost; color:#2c2c2c; font-size:90px;" class="ls-l ls-hide-desktop ls-hide-tablet" data-ls="offsetxin:-100; durationin:1200; offsetxout:100; easingout:easeOutQuint;">
+                    Ultra HD Sounds
+                </h1>
+                <h1 style="top:170px; left:250px; font-weight:700; background-size:inherit; background-position:inherit; font-size:90px; font-family:Jost; color:#2c2c2c;" class="ls-l ls-hide-desktop ls-hide-tablet" data-ls="offsetxin:-150; durationin:1300; delayin:300; easingin:easeOutQuint; offsetxout:150; durationout:1300; easingout:easeOutQuint;">
+                    Speakers
+                </h1>
+                <div style="top:360px; left:250px; background-size:inherit; background-position:inherit; font-family:Jost;" class="ls-l ls-hide-desktop ls-hide-tablet" data-ls="offsetyin:70; durationin:1200; delayin:1000;"><a href="shop.html" class="line-btn line-btn-mobile">Shop Now</a></div>
+                <p style="top:390px; left:465px; font-weight:700; background-size:inherit; background-position:inherit; font-size:16px; font-family:Jost; color:#2c2c2c;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="durationin:1200; easingin:easeOutQuint; rotatexin:90; transformoriginin:50% 0% 0; durationout:1300; easingout:easeOutQuint; rotatexout:90; transformoriginout:50% 100% 0;">03</p>
+            </div>
+        </div>
+    </section>
+    <!--==============================
+    Features Area
+    ==============================-->
+    <section class="space-top space-extra-bottom">
+        <div class="container-lg">
+            <div class="row justify-content-between">
+                <div class="col-sm-4 col-md-4 col-lg-auto d-flex justify-content-center">
+                    <div class="feature_media">
+                        <div class="feature_media_icon">
+                            <img src="assets/img/icon/feature-2-1.png" alt="feature icon">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="feature_media_title">Free Shipping</h3>
+                            <p class="feature_media_text">Free shipping on all US order</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-auto d-flex justify-content-center">
+                    <div class="feature_media">
+                        <div class="feature_media_icon">
+                            <img src="assets/img/icon/feature-2-2.png" alt="feature icon">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="feature_media_title">Support 24/ 7</h3>
+                            <p class="feature_media_text">Contact us 24 hours a day</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-auto d-flex justify-content-center">
+                    <div class="feature_media">
+                        <div class="feature_media_icon">
+                            <img src="assets/img/icon/feature-2-3.png" alt="feature icon">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="feature_media_title">90 Days Return</h3>
+                            <p class="feature_media_text">If goods have problems</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==============================
+    Category Area
+    ==============================-->
+    <section class="bg-secondary space-top space-extra-bottom">
+        <div class="container">
+            <div class="title-area">
+                <div class="row justify-content-between align-items-center text-center text-md-start">
+                    <div class="col-md-auto">
+                        <h2 class="sec-title">Featured Categories</h2>
+                        <p class="sec-title mb-0">Our campaigns, the latest trends and new collections</p>
+                    </div>
+                    <div class="col-md-auto mt-20 mt-lg-0">
+                        <button data-slick-prev="#catSlide1" class="icon-btn style3 me-2"><i class="far fa-chevron-left"></i></button>
+                        <button data-slick-next="#catSlide1" class="icon-btn style3"><i class="far fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row vs-carousel" data-slide-show="3" data-sm-slide-show="2" data-xs-slide-show="1" data-rows="2" id="catSlide1">
+                <div class="col-md-6 col-lg-4">
+                    <div class="cat_chart">
+                        <div class="cat_chart_img">
+                            <img src="assets/img/category/cat-1-1.jpg" alt="Category Image">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="cat_chart_title">Computer</h3>
+                            <ul class="cat_chart_list">
+                                <li><a href="shop.html">Eluktronics</a></li>
+                                <li><a href="shop.html">Lenovo</a></li>
+                                <li><a href="shop.html">Macbook</a></li>
+                                <li><a href="shop.html">Apple</a></li>
+                                <li><a href="shop.html">More...</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="cat_chart">
+                        <div class="cat_chart_img">
+                            <img src="assets/img/category/cat-1-3.jpg" alt="Category Image">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="cat_chart_title">Clean Machine</h3>
+                            <ul class="cat_chart_list">
+                                <li><a href="shop.html">Panasonic</a></li>
+                                <li><a href="shop.html">Haier</a></li>
+                                <li><a href="shop.html">Whirlpool</a></li>
+                                <li><a href="shop.html">Onida</a></li>
+                                <li><a href="shop.html">More...</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="cat_chart">
+                        <div class="cat_chart_img">
+                            <img src="assets/img/category/cat-1-2.jpg" alt="Category Image">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="cat_chart_title">Camera</h3>
+                            <ul class="cat_chart_list">
+                                <li><a href="shop.html">Canon</a></li>
+                                <li><a href="shop.html">Nikon</a></li>
+                                <li><a href="shop.html">Fujifilm</a></li>
+                                <li><a href="shop.html">Olympus</a></li>
+                                <li><a href="shop.html">More...</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="cat_chart">
+                        <div class="cat_chart_img">
+                            <img src="assets/img/category/cat-1-4.jpg" alt="Category Image">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="cat_chart_title">PC Headsets</h3>
+                            <ul class="cat_chart_list">
+                                <li><a href="shop.html">Gold Awin</a></li>
+                                <li><a href="shop.html">HeadSound</a></li>
+                                <li><a href="shop.html">Jaybird</a></li>
+                                <li><a href="shop.html">Klipsch</a></li>
+                                <li><a href="shop.html">More...</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="cat_chart">
+                        <div class="cat_chart_img">
+                            <img src="assets/img/category/cat-1-5.jpg" alt="Category Image">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="cat_chart_title">BT Headsets</h3>
+                            <ul class="cat_chart_list">
+                                <li><a href="shop.html">Abyss</a></li>
+                                <li><a href="shop.html">Aftershokz</a></li>
+                                <li><a href="shop.html">CEntrance</a></li>
+                                <li><a href="shop.html">Focusrite</a></li>
+                                <li><a href="shop.html">More...</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="cat_chart">
+                        <div class="cat_chart_img">
+                            <img src="assets/img/category/cat-1-6.jpg" alt="Category Image">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="cat_chart_title">Play Station</h3>
+                            <ul class="cat_chart_list">
+                                <li><a href="shop.html">PS One</a></li>
+                                <li><a href="shop.html">Fiesta Bowl</a></li>
+                                <li><a href="shop.html">Kevin Butler</a></li>
+                                <li><a href="shop.html">Marcus</a></li>
+                                <li><a href="shop.html">More...</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="cat_chart">
+                        <div class="cat_chart_img">
+                            <img src="assets/img/category/cat-1-7.jpg" alt="Category Image">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="cat_chart_title">Sound Box</h3>
+                            <ul class="cat_chart_list">
+                                <li><a href="shop.html">Bose</a></li>
+                                <li><a href="shop.html">Definitive</a></li>
+                                <li><a href="shop.html">Quested</a></li>
+                                <li><a href="shop.html">Klipsch</a></li>
+                                <li><a href="shop.html">More...</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="cat_chart">
+                        <div class="cat_chart_img">
+                            <img src="assets/img/category/cat-1-8.jpg" alt="Category Image">
+                        </div>
+                        <div class="media-body">
+                            <h3 class="cat_chart_title">Watchs</h3>
+                            <ul class="cat_chart_list">
+                                <li><a href="shop.html">Samsung</a></li>
+                                <li><a href="shop.html">Fitbit</a></li>
+                                <li><a href="shop.html">Apple</a></li>
+                                <li><a href="shop.html">Fossil</a></li>
+                                <li><a href="shop.html">More...</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==============================
+    Best Sellers
+    ==============================-->
+    <section class="space-top">
+        <div class="container">
+            <div class="title-area">
+                <div class="row justify-content-between align-items-center text-center text-md-start">
+                    <div class="col-md-auto">
+                        <h2 class="sec-title">Best Sellers</h2>
+                        <p class="sec-title">Our campaigns, the latest trends and new collections</p>
+                        <div class="sec-line"></div>
+                    </div>
+                    <div class="col-md-auto mt-20 mt-lg-0">
+                        <button data-slick-prev="#p_001" class="icon-btn style4 me-2"><i class="far fa-chevron-left"></i></button>
+                        <button data-slick-next="#p_001" class="icon-btn style4"><i class="far fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row vs-carousel gx-4" data-slide-show="4" data-lg-slide-show="3" data-md-slide-show="3" id="p_001">
+                <div class="col-xl-3">
+                    <div class="vs-product product_layout1 style3">
+                        <div class="product-img">
+                            <a href="shop-details.html"><img src="assets/img/featued/featued-3-1.jpg" alt="featued"></a>
+                            <div class="actions">
+                                <a href="cart.html" class="icon-btn style2"><i class="fal fa-shopping-bag"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title"><a href="shop-details.html" class="text-inherit">Hand Camera</a></h3>
+                            <span class="product-price">$399.90</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="vs-product product_layout1 style3">
+                        <div class="product-img">
+                            <a href="shop-details.html"><img src="assets/img/featued/featued-3-2.jpg" alt="featued"></a>
+                            <div class="actions">
+                                <a href="cart.html" class="icon-btn style2"><i class="fal fa-shopping-bag"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title"><a href="shop-details.html" class="text-inherit">Desk Camera</a></h3>
+                            <span class="product-price">$129.90 <del>$222.00</del></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="vs-product product_layout1 style3">
+                        <div class="product-img">
+                            <a href="shop-details.html"><img src="assets/img/featued/featued-3-3.jpg" alt="featued"></a>
+                            <div class="actions">
+                                <a href="cart.html" class="icon-btn style2"><i class="fal fa-shopping-bag"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title"><a href="shop-details.html" class="text-inherit">HD Microphone</a></h3>
+                            <span class="product-price">$693.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="vs-product product_layout1 style3">
+                        <div class="product-img">
+                            <a href="shop-details.html"><img src="assets/img/featued/featued-3-4.jpg" alt="featued"></a>
+                            <div class="actions">
+                                <a href="cart.html" class="icon-btn style2"><i class="fal fa-shopping-bag"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title"><a href="shop-details.html" class="text-inherit">Web Camera</a></h3>
+                            <span class="product-price">$669.90</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="vs-product product_layout1 style3">
+                        <div class="product-img">
+                            <a href="shop-details.html"><img src="assets/img/featued/featued-3-5.jpg" alt="featued"></a>
+                            <div class="actions">
+                                <a href="cart.html" class="icon-btn style2"><i class="fal fa-shopping-bag"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title"><a href="shop-details.html" class="text-inherit">Game Controler</a></h3>
+                            <span class="product-price">$177.90</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==============================
+    New Arrivals
+    ==============================-->
+    <section class="space-extra-top">
+        <div class="container">
+            <div class="title-area text-center">
+                <h2 class="sec-title">New Arrivals</h2>
+                <p class="sec-text">Fresh and Bold</p>
+                <div class="sec-line"></div>
+            </div>
+        </div>
+        <div class="container vs_container">
+            <div class="row">
+                <div class="col-xl">
+                    <div class="mega_product">
+                        <div class="mega_product_tag">Save 20%</div>
+                        <div class="mega_product_img">
+                            <img src="assets/img/banner/banner-3-1.jpg" alt="Banner Image">
+                        </div>
+                        <div class="mega_product_body">
+                            <span class="mega_product_label">Special Offer</span>
+                            <h3 class="mega_product_title"><a href="shop-details.html" class="text-inherit">Vr. Vase</a></h3>
+                            <p class="mega_product_price">$690.99 <del>$720.00</del></p>
+                            <p class="mega_product_text">Get a 20% Cashback when buying TWS Product From SoundPro Audio Technology.</p>
+                            <div class="mega_product_bar">
+                                <div class="bar_top">
+                                    <p class="bar_top_title">Already Sold: <strong>10</strong></p>
+                                    <p class="bar_top_title">Available: <strong>25</strong></p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="mega_product_count">
+                                <p class="count_text">Hurry Up ! Offer ends in</p>
+                                <ul class="offer-counter mega_product_counter" data-offer-date="12/08/2023">
+                                    <li>
+                                        <div class="hour count-number ">00</div>
+                                        <span class="count-name">HR</span>
+                                    </li>
+                                    <li>
+                                        <div class="minute count-number ">00</div>
+                                        <span class="count-name">Min</span>
+                                    </li>
+                                    <li>
+                                        <div class="seconds count-number ">00</div>
+                                        <span class="count-name">Sec</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl">
+                    <div class="row pt-30 pt-xl-0">
+                        <div class="col-6">
+                            <div class="vs-product product_layout1 style2">
+                                <div class="product-img">
+                                    <span class="tag-style1">Sale</span>
+                                    <a href="shop-details.html"><img src="assets/img/featued/featued-2-5.jpg" alt="featued"></a>
+                                    <div class="actions">
+                                        <a href="cart.html" class="icon-btn style2"><i class="fal fa-shopping-bag"></i></a>
+                                        <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                        <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                                    </div>
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="product-title"><a href="shop-details.html" class="text-inherit">Amazone Alexa</a></h3>
+                                    <span class="product-price">$599.90</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="vs-product product_layout1 style2">
+                                <div class="product-img">
+                                    <span class="tag-style1">Sale</span>
+                                    <a href="shop-details.html"><img src="assets/img/featued/featued-2-6.jpg" alt="featued"></a>
+                                    <div class="actions">
+                                        <a href="cart.html" class="icon-btn style2"><i class="fal fa-shopping-bag"></i></a>
+                                        <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                        <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                                    </div>
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="product-title"><a href="shop-details.html" class="text-inherit">BT Headsets</a></h3>
+                                    <span class="product-price">$99.90</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="vs-product product_layout1 style2">
+                                <div class="product-img">
+                                    <span class="tag-style1">Sale</span>
+                                    <a href="shop-details.html"><img src="assets/img/featued/featued-2-7.jpg" alt="featued"></a>
+                                    <div class="actions">
+                                        <a href="cart.html" class="icon-btn style2"><i class="fal fa-shopping-bag"></i></a>
+                                        <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                        <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                                    </div>
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="product-title"><a href="shop-details.html" class="text-inherit">HD Speaker</a></h3>
+                                    <span class="product-price">$633.90</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="vs-product product_layout1 style2">
+                                <div class="product-img">
+                                    <span class="tag-style1">Sale</span>
+                                    <a href="shop-details.html"><img src="assets/img/featued/featued-2-8.jpg" alt="featued"></a>
+                                    <div class="actions">
+                                        <a href="cart.html" class="icon-btn style2"><i class="fal fa-shopping-bag"></i></a>
+                                        <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                        <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                                    </div>
+                                </div>
+                                <div class="product-content">
+                                    <h3 class="product-title"><a href="shop-details.html" class="text-inherit">Apple Watch</a></h3>
+                                    <span class="product-price">$300.90</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==============================
+    Banner Area
+    ==============================-->
+    <section class="space-extra-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xl-6 mb-30">
+                    <div class="banner_style4 style2" data-bg-src="assets/img/banner/banner-2-1.jpg">
+                        <h3 class="banner_title">Best seller</h3>
+                        <p class="banner_text">Cookware <br> & Kitchen Tools</p>
+                        <a href="shop.html" class="line-btn banner_btn">Shop Now</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-6 mb-30">
+                    <div class="banner_style4 style2" data-bg-src="assets/img/banner/banner-2-2.jpg">
+                        <h3 class="banner_title">Sale Offer - 20% <br> Off This Week</h3>
+                        <p class="banner_text"><strong>From $459.99</strong></p>
+                        <a href="shop.html" class="line-btn banner_btn">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--==============================
+    Top Category Products
+  ============================== -->
+    <section class="vs-product-wrapper space-extra-top">
+        <div class="container">
+            <div class="title-area">
+                <div class="row justify-content-between align-items-center text-center text-md-start">
+                    <div class="col-md-auto">
+                        <h2 class="sec-title">Top Categorys</h2>
+                        <p class="sec-title">Our campaigns, the latest trends and new collections</p>
+                        <div class="sec-line"></div>
+                    </div>
+                    <div class="col-md-auto mt-20 mt-lg-0">
+                        <button data-slick-prev="#s_464" class="icon-btn style4 me-2"><i class="far fa-chevron-left"></i></button>
+                        <button data-slick-next="#s_464" class="icon-btn style4"><i class="far fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row vs-carousel gx-4" data-slide-show="4" data-lg-slide-show="3" data-md-slide-show="3" id="s_464">
+
+                <div class="col-xl-3">
+                    <div class="vs-product product_layout1 style4">
+                        <div class="product-img">
+                            <a href="shop-details.html"><img src="assets/img/featued/featued-3-6.jpg" alt="featued"></a>
+                            <div class="actions">
+                                <a href="cart.html" class="icon-btn style2"><i class="fal fa-shopping-bag"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title"><a href="shop-details.html" class="text-inherit">IPhone X</a></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3">
+                    <div class="vs-product product_layout1 style4">
+                        <div class="product-img">
+                            <a href="shop-details.html"><img src="assets/img/featued/featued-3-7.jpg" alt="featued"></a>
+                            <div class="actions">
+                                <a href="cart.html" class="icon-btn style2"><i class="fal fa-shopping-bag"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title"><a href="shop-details.html" class="text-inherit">Mini Speaker</a></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3">
+                    <div class="vs-product product_layout1 style4">
+                        <div class="product-img">
+                            <a href="shop-details.html"><img src="assets/img/featued/featued-3-8.jpg" alt="featued"></a>
+                            <div class="actions">
+                                <a href="cart.html" class="icon-btn style2"><i class="fal fa-shopping-bag"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title"><a href="shop-details.html" class="text-inherit">Mini Intel I7 Computer</a></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3">
+                    <div class="vs-product product_layout1 style4">
+                        <div class="product-img">
+                            <a href="shop-details.html"><img src="assets/img/featued/featued-3-9.jpg" alt="featued"></a>
+                            <div class="actions">
+                                <a href="cart.html" class="icon-btn style2"><i class="fal fa-shopping-bag"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title"><a href="shop-details.html" class="text-inherit">Metal Mobile Stand</a></h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3">
+                    <div class="vs-product product_layout1 style4">
+                        <div class="product-img">
+                            <a href="shop-details.html"><img src="assets/img/featued/featued-3-10.jpg" alt="featued"></a>
+                            <div class="actions">
+                                <a href="cart.html" class="icon-btn style2"><i class="fal fa-shopping-bag"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title"><a href="shop-details.html" class="text-inherit">BT Ultra Music Set</a></h3>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!--==============================
+    Brand Area
+    ==============================-->
+    <div class="space-extra-top">
+        <div class="container">
+            <div class="brand-wrap1">
+                <div class="row vs-carousel text-center" data-slide-show="5" data-lg-slide-show="4" data-md-slide-show="3">
+                    <div class="col-auto">
+                        <div class="vs-brand">
+                            <img src="assets/img/brand/b-2-1.png" alt="Brand Image">
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="vs-brand">
+                            <img src="assets/img/brand/b-2-2.png" alt="Brand Image">
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="vs-brand">
+                            <img src="assets/img/brand/b-2-3.png" alt="Brand Image">
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="vs-brand">
+                            <img src="assets/img/brand/b-2-4.png" alt="Brand Image">
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="vs-brand">
+                            <img src="assets/img/brand/b-2-5.png" alt="Brand Image">
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="vs-brand">
+                            <img src="assets/img/brand/b-2-1.png" alt="Brand Image">
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="vs-brand">
+                            <img src="assets/img/brand/b-2-2.png" alt="Brand Image">
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="vs-brand">
+                            <img src="assets/img/brand/b-2-3.png" alt="Brand Image">
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="vs-brand">
+                            <img src="assets/img/brand/b-2-4.png" alt="Brand Image">
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="vs-brand">
+                            <img src="assets/img/brand/b-2-5.png" alt="Brand Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--==============================
+    Blog Area
+    ==============================-->
+    <section class="vs-blog-wrapper space-top space-extra-bottom">
+        <div class="container">
+            <div class="title-area">
+                <div class="row justify-content-between align-items-center text-center text-md-start">
+                    <div class="col-auto">
+                        <h2 class="sec-title">From Our Blog</h2>
+                        <p class="sec-title">Our campaigns, the latest trends and new collections</p>
+                        <div class="sec-line"></div>
+                    </div>
+                    <div class="col-md-auto mt-20 mt-lg-0">
+                        <button class="icon-btn style4 me-2"><i class="far fa-chevron-left"></i></button>
+                        <button class="icon-btn style4"><i class="far fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="row vs-carousel" data-slide-show="3" data-sm-slide-show="1" data-xs-slide-show="1">
+
+                <div class="col-xl-4">
+                    <div class="vs-blog blog-card">
+                        <div class="blog-img">
+                            <img src="assets/img/blog/blog-1-1.jpg" alt="Blog Image" class="w-100">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <a href="blog.html">Dec 12, 2022</a>
+                                <a href="blog.html">Admin</a>
+                            </div>
+                            <h3 class="blog-title h4"><a href="blog-details.html">Aypi non habent claritatem insitam passage</a></h3>
+                            <p class="blog-text">Great for swimming and especially if there are rocks and uneven terrain. They stay snug on your feet while swimming and dry quickly. I wear them on my offshore fishing boat. Very comfortable.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4">
+                    <div class="vs-blog blog-card">
+                        <div class="blog-img">
+                            <img src="assets/img/blog/blog-1-2.jpg" alt="Blog Image" class="w-100">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <a href="blog.html">Feb 30, 2022</a>
+                                <a href="blog.html">Member</a>
+                            </div>
+                            <h3 class="blog-title h4"><a href="blog-details.html">Until recently, the prevail view the digital era about</a></h3>
+                            <p class="blog-text">Great for swimming and especially if there are rocks and uneven terrain. They stay snug on your feet while swimming and dry quickly. I wear them on my offshore fishing boat. Very comfortable.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4">
+                    <div class="vs-blog blog-card">
+                        <div class="blog-img">
+                            <img src="assets/img/blog/blog-1-3.jpg" alt="Blog Image" class="w-100">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <a href="blog.html">Mar 31, 2022</a>
+                                <a href="blog.html">Admin</a>
+                            </div>
+                            <h3 class="blog-title h4"><a href="blog-details.html">The placeholder text, beginn with there is to know</a></h3>
+                            <p class="blog-text">Great for swimming and especially if there are rocks and uneven terrain. They stay snug on your feet while swimming and dry quickly. I wear them on my offshore fishing boat. Very comfortable.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-4">
+                    <div class="vs-blog blog-card">
+                        <div class="blog-img">
+                            <img src="assets/img/blog/blog-1-4.jpg" alt="Blog Image" class="w-100">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <a href="blog.html">Aug 26, 2022</a>
+                                <a href="blog.html">Founder</a>
+                            </div>
+                            <h3 class="blog-title h4"><a href="blog-details.html">Richard McClintock, a Latin scholar the ubiquitous</a></h3>
+                            <p class="blog-text">Great for swimming and especially if there are rocks and uneven terrain. They stay snug on your feet while swimming and dry quickly. I wear them on my offshore fishing boat. Very comfortable.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--==============================
+    Galley Area
+    ==============================-->
+    <div class=" ">
+        <div class="container-fluid px-xxl-0">
+            <div class="row gx-0 vs-carousel" data-slide-show="6" data-lg-slide-show="4" data-md-slide-show="3">
+                <div class="col-2">
+                    <div class="gallery_card image-scale-hover">
+                        <div class="gallery_card_img">
+                            <img src="assets/img/gallery/g-1-8.jpg" alt="Gallery Image">
+                        </div>
+                        <a href="assets/img/gallery/g-1-8.jpg" class="gallery_card_icon popup-image"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="gallery_card image-scale-hover">
+                        <div class="gallery_card_img">
+                            <img src="assets/img/gallery/g-1-9.jpg" alt="Gallery Image">
+                        </div>
+                        <a href="assets/img/gallery/g-1-9.jpg" class="gallery_card_icon popup-image"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="gallery_card image-scale-hover">
+                        <div class="gallery_card_img">
+                            <img src="assets/img/gallery/g-1-10.jpg" alt="Gallery Image">
+                        </div>
+                        <a href="assets/img/gallery/g-1-10.jpg" class="gallery_card_icon popup-image"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="gallery_card image-scale-hover">
+                        <div class="gallery_card_img">
+                            <img src="assets/img/gallery/g-1-11.jpg" alt="Gallery Image">
+                        </div>
+                        <a href="assets/img/gallery/g-1-11.jpg" class="gallery_card_icon popup-image"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="gallery_card image-scale-hover">
+                        <div class="gallery_card_img">
+                            <img src="assets/img/gallery/g-1-12.jpg" alt="Gallery Image">
+                        </div>
+                        <a href="assets/img/gallery/g-1-12.jpg" class="gallery_card_icon popup-image"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="gallery_card image-scale-hover">
+                        <div class="gallery_card_img">
+                            <img src="assets/img/gallery/g-1-13.jpg" alt="Gallery Image">
+                        </div>
+                        <a href="assets/img/gallery/g-1-13.jpg" class="gallery_card_icon popup-image"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="gallery_card image-scale-hover">
+                        <div class="gallery_card_img">
+                            <img src="assets/img/gallery/g-1-14.jpg" alt="Gallery Image">
+                        </div>
+                        <a href="assets/img/gallery/g-1-14.jpg" class="gallery_card_icon popup-image"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--==============================
+			Footer Area
+	==============================-->
+    <footer class="footer-wrapper footer-layout1">
+        <div class="widget-area">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-md-5 col-lg-3">
+                        <div class="widget footer-widget">
+                            <h3 class="widget_title">Contact Us</h3>
+                            <div class="vs-widget-about">
+                                <form action="#" class="footer-newsletter">
+                                    <p class="form-text">Get on the list so we can stay in touch</p>
+                                    <div class="form-group">
+                                        <input type="email" id="newsletteremail" name="newsletteremail" placeholder="Your email address">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                </form>
+                                <p class="footer-info"><i class="fas fa-paper-plane"></i><a class="text-inherit" href="mailto:Vendora@email.com">Vendora@email.com</a></p>
+                                <p class="footer-info"><i class="fas fa-phone-alt"></i><a class="text-inherit" href="tel:703-261-6660">703-261-6660</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto col-md-6 col-lg-auto offset-xl-1">
+                        <div class="widget widget_nav_menu  footer-widget">
+                            <h3 class="widget_title">Services</h3>
+                            <div class="menu-all-pages-container">
+                                <ul class="menu">
+                                    <li><a href="#">Track My Order</a></li>
+                                    <li><a href="#">Returns</a></li>
+                                    <li><a href="#">Shipping Terms</a></li>
+                                    <li><a href="#">Payment Policy</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto col-md-6 col-lg-auto">
+                        <div class="widget widget_nav_menu  footer-widget">
+                            <h3 class="widget_title">Follow Us On</h3>
+                            <div class="menu-all-pages-container">
+                                <ul class="menu">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i>Facebook</a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+                                    <li><a href="#"><i class="far fa-blog"></i>Bebo</a></li>
+                                    <li><a href="#"><i class="far fa-basketball-ball"></i>Dribvble</a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-auto">
+                        <div class="widget footer-widget">
+                            <h3 class="widget_title">Shop Address</h3>
+                            <div class="footer-map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115078.21247479583!2d-74.06078298144763!3d40.717427384710724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1636528338849!5m2!1sen!2sbd" width="400" height="135" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-wrap text-center">
+            <p class="mb-0"><i class="fal fa-copyright"></i> 2022 <a class="text-reset" href="index.html">Vendora</a>. All rights reserved by <a class="text-reset" href="https://themeforest.net/user/vecuro">Vecuro</a>.</p>
+        </div>
+    </footer>
+
+
+
+    <!--********************************
+			Code End  Here 
+	******************************** -->
+
+
+    <!-- Scroll To Top -->
+    <a href="#" class="scrollToTop scroll-btn"><i class="far fa-arrow-up"></i></a>
+
+
+{% endblock %}

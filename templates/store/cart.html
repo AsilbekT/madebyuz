@@ -1,0 +1,340 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <!--********************************
+   		Code Start From Here 
+	******************************** -->
+
+
+
+
+    <!--==============================
+     Preloader
+  ==============================-->
+    <div class="preloader  ">
+        <button class="vs-btn preloaderCls">Cancel Preloader </button>
+        <div class="preloader-inner">
+            <img src="{% static 'assets/img/logo.png' %}" alt="Vendora">
+            <span class="loader"></span>
+        </div>
+    </div>
+    <div class="popup-newsletter-active popup-newsletter-wrap show">
+        <div class="popup-newsletter">
+            <button class="popup-newsletter-closer"><i class="fal fa-times"></i></button>
+            <div class="newsletter-img">
+                <img src="{% static 'assets/img/banner/popup-banner-1.jpg' %}" alt="Banner">
+            </div>
+            <div class="newsletter-content">
+                <span class="newsletter-subtitle">Newsletter</span>
+                <h2 class="newsletter-title h3">Be The First To Know</h2>
+                <p class="newsletter-text">Sign up for emails to get our latest updates</p>
+                <input type="text" class="form-control" placeholder="Your Email Address">
+                <button class="vs-btn style7">Subscribe Now</button>
+            </div>
+        </div>
+    </div>
+    <!--==============================
+    Mobile Menu
+  ============================== -->
+    <div class="vs-menu-wrapper">
+        <div class="vs-menu-area text-center">
+            <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
+            <div class="mobile-logo">
+                <a href="index.html"><img src="{% static 'assets/img/logo-mobile.png' %}" alt="Vendora"></a>
+            </div>
+            <div class="vs-mobile-menu">
+                <ul>
+                    <li class="menu-item-has-children">
+                        <a href="index.html">Home</a>
+                        {% comment %} <ul class="sub-menu">
+                            <li><a href="index.html">Home v1 - Fashion</a></li>
+                            <li><a href="index-2.html">Home v2 - Electronic</a></li>
+                            <li><a href="index-3.html">Home v3 - Organic Food</a></li>
+                            <li><a href="index-4.html">Home v4 - Furniture</a></li>
+                            <li><a href="index-5.html">Home v5 - Wine</a></li>
+                            <li><a href="index-6.html">Home v6 - Shoes</a></li>
+                            <li><a href="index-7.html">Home v7 - Interior Furniture</a></li>
+                            <li><a href="index-8.html">Home v8 - Bags & Eyeware</a></li>
+                            <li><a href="index-9.html">Home v9 - Jewellery & Watches</a></li>
+                            <li><a href="index-10.html">Home v10 - Market</a></li>
+                            <li><a href="index-11.html">Home v11 - Medical</a></li>
+                        </ul> {% endcomment %}
+                    </li>
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="blog.html">Blog</a>
+                        <ul class="sub-menu">
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="blog-details.html">Blog Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="blog.html">Shop</a>
+                        <ul class="sub-menu">
+                            <li><a href="{% url 'shop' %}">Shop</a></li>
+                            <li><a href="shop-details.html">Shop Details</a></li>
+                            <li><a href="cart.html">Shopping Cart</a></li>
+                            <li><a href="{% url 'checkout' %}">Check Out</a></li>
+                            <li><a href="login.html">Login Page</a></li>
+                            <li><a href="signup.html">Registration Page</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#">Pages</a>
+                        <ul class="sub-menu">
+                            <li><a href="faq.html">FAQ Page</a></li>
+                            <li><a href="error.html">Error Page</a></li>
+                            <li><a href="coming-soon.html">Coming Soon</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--==============================
+    Header Area
+    ==============================-->
+    {% include 'nav.html' %}
+    <!--==============================
+    Breadcumb
+============================== -->
+    <div class="breadcumb-wrapper " data-bg-src="{% static 'assets/img/breadcumb/bredcumb-1.png' %}">
+        <div class="container z-index-common">
+            <div class="breadcumb-content">
+                <h1 class="breadcumb-title">Shopping Cart</h1>
+            </div>
+            <div class="breadcumb-menu-wrap">
+                <ul class="breadcumb-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active">Shopping Cart</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--==============================
+    Cart Area
+    ==============================-->
+    <div class="vs-cart-wrapper  space-top space-extra-bottom">
+        <div class="container">
+            <div class="woocommerce-notices-wrapper">
+                <div class="woocommerce-message">Shipping costs updated.</div>
+            </div>
+            <form action="#" class="woocommerce-cart-form">
+                <table class="cart_table">
+                    <thead>
+                        <tr>
+                            <th class="cart-col-image">Image</th>
+                            <th class="cart-col-productname">Product Name</th>
+                            <th class="cart-col-price">Price</th>
+                            <th class="cart-col-quantity">Quantity</th>
+                            <th class="cart-col-total">Total</th>
+                            <th class="cart-col-remove">Remove</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for item in items %}
+                        <tr class="cart_item">
+                            <td data-title="Product">
+                                <a class="cart-productimage" href="{% url 'shop_details' id=item.product.id  %}"><img width="91" height="91" src="{{ item.product.product_url }}" alt="Image"></a>
+                            </td>
+                            <td data-title="Name">
+                                <a class="cart-productname" href="{% url 'shop_details' id=item.product.id %}">{{ item.product.name }}</a>
+                            </td>
+                            <td data-title="Price">
+                                <span class="amount"><bdi><span>$</span>{{ item.product.price }}</bdi></span>
+                            </td>
+                            <td data-title="Quantity">
+                                <div class="quantity">
+                                    <button class="quantity-minus qut-btn update-btn" data-product="{{ item.product.id }}" data-action="remove"><i class="far fa-minus"></i></button>
+                                    <input type="number" class="qty-input" value="{{ item.quantity }}" min="1" max="99">
+                                    <button class="quantity-plus qut-btn update-btn" data-product="{{ item.product.id }}" data-action="add"><i class="far fa-plus"></i></button>
+                                </div>
+                            </td>
+                            <td data-title="Total">
+                                <span class="amount"><bdi><span>$</span>{{ item.get_total }}</bdi></span>
+                            </td>
+                            <td data-title="Remove">
+                                <button class="remove update-btn" data-product="{{ item.product.id }}" data-action="delete"><i class="fal fa-trash-alt"></i></button>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                        <tr>
+                            <td colspan="6" class="actions">
+                                <div class="vs-cart-coupon">
+                                    <input type="text" class="form-control" placeholder="Coupon Code...">
+                                    <button type="submit" class="vs-btn rounded-1 shadow-none">Apply Coupon</button>
+                                </div>
+                                <button type="submit" class="vs-btn style2 rounded-1 shadow-none">Update cart</button>
+                                <a href="{% url 'shop' %}" class="vs-btn rounded-1 shadow-none">Continue Shopping</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+            <div class="row justify-content-end">
+                <div class="col-md-8 col-lg-7 col-xl-6">
+                    <h2 class="h4 summary-title">Cart Totals</h2>
+                    <table class="cart_totals">
+                        <tbody>
+                            <tr>
+                                <td>Cart Subtotal</td>
+                                <td data-title="Cart Subtotal">
+                                    <span class="amount"><bdi><span>$</span>{{ order.get_cart_total }}</bdi></span>
+                                </td>
+                            </tr>
+                            <tr class="shipping">
+                                <th>Shipping and Handling</th>
+                                <td data-title="Shipping and Handling">
+                                    <ul class="woocommerce-shipping-methods list-unstyled">
+                                        <li>
+                                            <input type="radio" id="free_shipping" name="shipping_method" class="shipping_method">
+                                            <label for="free_shipping">Free shipping</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" id="flat_rate" name="shipping_method" class="shipping_method" checked="checked">
+                                            <label for="flat_rate">Flat rate</label>
+                                        </li>
+                                    </ul>
+                                    <p class="woocommerce-shipping-destination">
+                                        Shipping options will be updated during checkout.
+                                    </p>
+                                    <form action="#" method="post">
+                                        <a href="#" class="shipping-calculator-button">Change address</a>
+                                        <div class="shipping-calculator-form">
+                                            <p class="form-row">
+                                                <select class="form-select">
+                                                    <option value="AR">Argentina</option>
+                                                    <option value="AM">Armenia</option>
+                                                    <option value="BD" selected="selected">Bangladesh</option>
+                                                </select>
+                                            </p>
+                                            <p>
+                                                <select class="form-select">
+                                                    <option value="">Select an option…</option>
+                                                    <option value="BD-05">Bagerhat</option>
+                                                    <option value="BD-01">Bandarban</option>
+                                                    <option value="BD-02">Barguna</option>
+                                                    <option value="BD-06">Barishal</option>
+                                                </select>
+                                            </p>
+                                            <p class="form-row">
+                                                <input type="text" class="form-control" placeholder="Town / City">
+                                            </p>
+                                            <p class="form-row">
+                                                <input type="text" class="form-control" placeholder="Postcode / ZIP">
+                                            </p>
+                                            <p>
+                                                <button class="vs-btn shadow-none rounded-1">Update</button>
+                                            </p>
+                                        </div>
+                                    </form>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr class="order-total">
+                                <td>Order Total</td>
+                                <td data-title="Total">
+                                    <strong><span class="amount"><bdi><span>$</span>{{ order.get_cart_total }}</bdi></span></strong>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="wc-proceed-to-checkout mb-30">
+                        <a href="{% url 'checkout' %}" class="vs-btn rounded-1 shadow-none">Proceed to checkout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--==============================
+			Footer Area
+	==============================-->
+    <footer class="footer-wrapper footer-layout3" data-bg-src="{% static 'assets/img/bg/footer-bg-3-1.jpg' %}">
+        <div class="widget-area">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-sm-6 col-md-6 col-lg-auto">
+                        <div class="widget  footer-widget">
+                            <h3 class="widget_title">Office</h3>
+                            <div class="vs-widget-about">
+                                <p class="footer-info">29 Holles Place, Dublin 2 D02 YY46</p>
+                                <p class="footer-info">68 Jay Street, Suite 902 New Side Brooklyn, NY 11201</p>
+                                <p class="footer-info">United States</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-auto">
+                        <div class="widget widget_nav_menu  footer-widget">
+                            <h3 class="widget_title">Useful Links</h3>
+                            <div class="menu-all-pages-container">
+                                <ul class="menu">
+                                    <li><a href="#">Customer Rating</a></li>
+                                    <li><a href="#">Top Product</a></li>
+                                    <li><a href="#">Weekly Best Items</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Latest Posts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-auto">
+                        <div class="widget widget_nav_menu  footer-widget">
+                            <h3 class="widget_title">Quick Links</h3>
+                            <div class="menu-all-pages-container">
+                                <ul class="menu">
+                                    <li><a href="#">Why Buy From Us?</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Store Locator</a></li>
+                                    <li><a href="#">About Blue John</a></li>
+                                    <li><a href="#">About Whitby Jet</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-auto">
+                        <div class="widget widget_nav_menu  footer-widget">
+                            <h3 class="widget_title">Services</h3>
+                            <div class="menu-all-pages-container">
+                                <ul class="menu">
+                                    <li><a href="#">Make an Appointment</a></li>
+                                    <li><a href="#">Jewellery Design Service</a></li>
+                                    <li><a href="#">Jewellery Repairs</a></li>
+                                    <li><a href="#">Price Match Promise</a></li>
+                                    <li><a href="#">Trade Your Watch</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright-wrap text-center">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-md-auto">
+                        <p class="mb-0"><i class="fal fa-copyright"></i> 2022 <a class="text-reset" href="index.html">Vendora</a>. All rights reserved by <a class="text-reset" href="https://themeforest.net/user/vecuro">Vecuro</a>.</p>
+                    </div>
+                    <div class="col-md-auto d-none d-md-block">
+                        <img src="{% static 'assets/img/footer/card-2.png' %}" alt="Footer Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--********************************
+			Code End  Here 
+	******************************** -->
+
+
+    <!-- Scroll To Top -->
+    <a href="#" class="scrollToTop scroll-btn"><i class="far fa-arrow-up"></i></a>
+
+{% endblock %}

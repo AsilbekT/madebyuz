@@ -1,0 +1,496 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <!--[if lte IE 9]>
+    	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+
+
+    <!--********************************
+   		Code Start From Here 
+	******************************** -->
+
+
+
+
+    <!--==============================
+     Preloader
+  ==============================-->
+    <div class="preloader  ">
+        <button class="vs-btn preloaderCls">Cancel Preloader </button>
+        <div class="preloader-inner">
+            <img src="{% static 'assets/img/logo.png' %}" alt="Vendora">
+            <span class="loader"></span>
+        </div>
+    </div>
+    <div class="popup-newsletter-active popup-newsletter-wrap show">
+        <div class="popup-newsletter">
+            <button class="popup-newsletter-closer"><i class="fal fa-times"></i></button>
+            <div class="newsletter-img">
+                <img src="{% static 'assets/img/banner/popup-banner-1.jpg' %}" alt="Banner">
+            </div>
+            <div class="newsletter-content">
+                <span class="newsletter-subtitle">Newsletter</span>
+                <h2 class="newsletter-title h3">Be The First To Know</h2>
+                <p class="newsletter-text">Sign up for emails to get our latest updates</p>
+                <input type="text" class="form-control" placeholder="Your Email Address">
+                <button class="vs-btn style7">Subscribe Now</button>
+            </div>
+        </div>
+    </div>
+    <!--==============================
+    Mobile Menu
+  ============================== -->
+    <div class="vs-menu-wrapper">
+        <div class="vs-menu-area text-center">
+            <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
+            <div class="mobile-logo">
+                <a href="{% url 'home1' %}"><img src="{% static 'assets/img/logo-mobile.png' %}" alt="Vendora"></a>
+            </div>
+            <div class="vs-mobile-menu">
+                <ul>
+                    <li class="menu-item-has-children">
+                        <a href="{% url 'home1' %}">Home</a>
+                        <ul class="sub-menu">
+                            <li><a href="{% url 'home1' %}">Home v1 - Fashion</a></li>
+                            <li><a href="index-2.html">Home v2 - Electronic</a></li>
+                            <li><a href="index-3.html">Home v3 - Organic Food</a></li>
+                            <li><a href="index-4.html">Home v4 - Furniture</a></li>
+                            <li><a href="index-5.html">Home v5 - Wine</a></li>
+                            <li><a href="index-6.html">Home v6 - Shoes</a></li>
+                            <li><a href="index-7.html">Home v7 - Interior Furniture</a></li>
+                            <li><a href="index-8.html">Home v8 - Bags & Eyeware</a></li>
+                            <li><a href="index-9.html">Home v9 - Jewellery & Watches</a></li>
+                            <li><a href="index-10.html">Home v10 - Market</a></li>
+                            <li><a href="index-11.html">Home v11 - Medical</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="blog.html">Blog</a>
+                        <ul class="sub-menu">
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="blog-details.html">Blog Details</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="blog.html">Shop</a>
+                        <ul class="sub-menu">
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="
+                                ">Shop Details</a></li>
+                            <li><a href="cart.html">Shopping Cart</a></li>
+                            <li><a href="checkout.html">Check Out</a></li>
+                            <li><a href="login.html">Login Page</a></li>
+                            <li><a href="signup.html">Registration Page</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#">Pages</a>
+                        <ul class="sub-menu">
+                            <li><a href="faq.html">FAQ Page</a></li>
+                            <li><a href="error.html">Error Page</a></li>
+                            <li><a href="coming-soon.html">Coming Soon</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--==============================
+    Header Area
+    ==============================-->
+    {% include 'nav.html' %}
+    <!--==============================
+    Breadcumb
+============================== -->
+    <div class="breadcumb-wrapper " data-bg-src="{% static 'assets/img/breadcumb/bredcumb-1.png' %}">
+        <div class="container z-index-common">
+            <div class="breadcumb-content">
+                <h1 class="breadcumb-title">Shop</h1>
+            </div>
+            <div class="breadcumb-menu-wrap">
+                <ul class="breadcumb-menu">
+                    <li><a href="{% url 'home1' %}">Home</a></li>
+                    <li class="active">Shop</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--==============================
+  Products Category
+  ============================== -->
+    <section class="space-top">
+        <div class="container">
+            <div class="row justify-content-between vs-carousel arrow-margin" data-arrows="true" data-slide-show="6" data-ml-slide-show="6" data-lg-slide-show="5" data-md-slide-show="4" data-sm-slide-show="3" data-xs-slide-show="2">
+                {% for catagory in catagories %}
+                <div class="col-xl-2">
+                    <div class="cat_rounded">
+                        <div class="cat-img">
+                            <a href="shop.html"><img src="{{ catagory.product_url }}" alt="Category"></a>
+                        </div>
+                        <h3 class="cat-name"><a class="text-inherit" href="shop.html">{{ catagory.name }}</a></h3>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <!--==============================
+    Product Area
+    ==============================-->
+    <section class="vs-product-wrapper space-extra">
+        <div class="container">
+            <div class="vs-sort-bar">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-md-auto">
+                        <div class="col-auto">
+                            <p class="woocommerce-result-count">Showing 1–12 of 13 results</p>
+                        </div>
+                    </div>
+                    <div class="col-md-auto">
+                        <div class="row justify-content-center">
+                            <div class="col-sm-auto">
+                                <form class="woocommerce-ordering" method="get">
+                                    <select name="orderby" class="orderby" aria-label="Shop order">
+                                        <option value="menu_order" selected="selected">Default Sorting</option>
+                                        <option value="popularity">Sort by popularity</option>
+                                        <option value="rating">Sort by average rating</option>
+                                        <option value="date">Sort by latest</option>
+                                        <option value="price">Sort by price: low to high</option>
+                                        <option value="price-desc">Sort by price: high to low</option>
+                                    </select>
+                                </form>
+                            </div>
+                            <div class="col-auto">
+                                <div class="nav" role=tablist>
+                                    <a href="#" class="icon-btn active" id="tab-shop-grid" data-bs-toggle="tab" data-bs-target="#tab-grid" role="tab" aria-controls="tab-grid" aria-selected="true"><i class="fas fa-th"></i></a>
+                                    <a href="#" class="icon-btn" id="tab-shop-list" data-bs-toggle="tab" data-bs-target="#tab-list" role="tab" aria-controls="tab-grid" aria-selected="false"><i class="fas fa-list"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade active show" id="tab-grid" role="tabpanel" aria-labelledby="tab-shop-grid">
+                    <div class="row">
+                        {% for product in products %}
+                        <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3">
+                            <div class="vs-product product_layout4">
+                                <div class="product-img">
+                                    <div class="product-label">New</div> <img src="{{ product.product_url }}" alt="Product">
+                                    <div class="actions">
+                                        <button type="button" class="icon-btn style2 update-btn" data-product="{{ product.id }}" data-action="add"><i class="fal fa-shopping-bag"></i></button>
+                                        <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                        <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                                    </div>
+                                </div>
+                                <div class="product-content">
+                                    <div class="product-category">
+                                        <a href="{% url 'shop_details' id=product.id %}">Latest</a>
+                                    </div>
+                                    <h3 class="product-title"><a href="
+                                        ">Pink Womens Neckles</a></h3>
+                                    <div class="product-price">$236.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tab-list" role="tabpanel" aria-labelledby="tab-shop-list">
+                    <div class="row">
+                        <div class="col-md-6 col-xl-4">
+                            <div class="vs-product product_layout12">
+                                <div class="product-img">
+                                    <div class="product-label">New</div> <a href="
+                                    "><img src="{% static '' %}assets/img/product/product-15-1.jpg" alt="Product"></a>
+                                    <div class="actions">
+                                        <a href="cart.html" class="icon-btn style2"><i class="fal fa-shopping-bag"></i></a>
+                                        <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                        <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                                    </div>
+                                </div>
+                                <div class="product-content">
+                                    <div class="product-category">
+                                        <a href="shop.html">Latest</a>
+                                    </div>
+                                    <h3 class="product-title"><a href="
+                                        ">Pink Womens Neckles</a></h3>
+                                    <div class="product-price">$159.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="vs-product product_layout12">
+                                <div class="product-img">
+                                    <a href="
+                                    "><img src="{% static 'assets/img/product/product-15-2.jpg' %}" alt="Product"></a>
+                                    <div class="actions">
+                                        <a href="cart.html" class="icon-btn style2"><i class="fal fa-shopping-bag"></i></a>
+                                        <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                        <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                                    </div>
+                                </div>
+                                <div class="product-content">
+                                    <div class="product-category">
+                                        <a href="shop.html">Men Shoes</a>
+                                    </div>
+                                    <h3 class="product-title"><a href="
+                                        ">Handbag Leather Cloth</a></h3>
+                                    <div class="product-price">$159.00 <del>$200.99</del></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="vs-product product_layout12">
+                                <div class="product-img">
+                                    <div class="product-label">New</div> <a href="
+                                    "><img src="{% static 'assets/img/product/product-15-3.jpg' %}" alt="Product"></a>
+                                    <div class="actions">
+                                        <a href="cart.html" class="icon-btn style2"><i class="fal fa-shopping-bag"></i></a>
+                                        <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                        <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                                    </div>
+                                </div>
+                                <div class="product-content">
+                                    <div class="product-category">
+                                        <a href="shop.html">Women Thing</a>
+                                    </div>
+                                    <h3 class="product-title"><a href="
+                                        ">iPhone Headset Bluetooth</a></h3>
+                                    <div class="product-price">$1230.90</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="vs-product product_layout12">
+                                <div class="product-img">
+                                    <a href="
+                                    "><img src="{% static 'assets/img/product/product-15-4.jpg' %}" alt="Product"></a>
+                                    <div class="actions">
+                                        <a href="cart.html" class="icon-btn style2"><i class="fal fa-shopping-bag"></i></a>
+                                        <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                        <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                                    </div>
+                                </div>
+                                <div class="product-content">
+                                    <div class="product-category">
+                                        <a href="shop.html">Popular</a>
+                                    </div>
+                                    <h3 class="product-title"><a href="
+                                        ">Crown Tiara Clothing</a></h3>
+                                    <div class="product-price">$230.90</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="vs-product product_layout12">
+                                <div class="product-img">
+                                    <a href="
+                                    "><img src="{% static 'assets/img/product/product-15-5.jpg' %}" alt="Product"></a>
+                                    <div class="actions">
+                                        <a href="cart.html" class="icon-btn style2"><i class="fal fa-shopping-bag"></i></a>
+                                        <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                        <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                                    </div>
+                                </div>
+                                <div class="product-content">
+                                    <div class="product-category">
+                                        <a href="shop.html">Top Rated</a>
+                                    </div>
+                                    <h3 class="product-title"><a href="
+                                        ">Key Chains transparent</a></h3>
+                                    <div class="product-price">$159.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="vs-product product_layout12">
+                                <div class="product-img">
+                                    <div class="product-label">New</div> <a href="
+                                    "><img src="{% static 'assets/img/product/product-15-6.jpg' %}" alt="Product"></a>
+                                    <div class="actions">
+                                        <a href="cart.html" class="icon-btn style2"><i class="fal fa-shopping-bag"></i></a>
+                                        <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                        <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                                    </div>
+                                </div>
+                                <div class="product-content">
+                                    <div class="product-category">
+                                        <a href="shop.html">Women Thing</a>
+                                    </div>
+                                    <h3 class="product-title"><a href="
+                                        ">X Screen Protectors</a></h3>
+                                    <div class="product-price">$159.00 <del>$200.99</del></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="vs-product product_layout12">
+                                <div class="product-img">
+                                    <div class="product-label">New</div> <a href="
+                                    "><img src="{% static '' %}assets/img/product/product-15-7.jpg" alt="Product"></a>
+                                    <div class="actions">
+                                        <a href="cart.html" class="icon-btn style2"><i class="fal fa-shopping-bag"></i></a>
+                                        <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                        <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                                    </div>
+                                </div>
+                                <div class="product-content">
+                                    <div class="product-category">
+                                        <a href="shop.html">Latest</a>
+                                    </div>
+                                    <h3 class="product-title"><a href="
+                                        ">Crown Tiara Clothing</a></h3>
+                                    <div class="product-price">$1230.90</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="vs-product product_layout12">
+                                <div class="product-img">
+                                    <a href="
+                                    "><img src="{% static 'assets/img/product/product-15-8.jpg' %}" alt="Product"></a>
+                                    <div class="actions">
+                                        <a href="cart.html" class="icon-btn style2"><i class="fal fa-shopping-bag"></i></a>
+                                        <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                        <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                                    </div>
+                                </div>
+                                <div class="product-content">
+                                    <div class="product-category">
+                                        <a href="shop.html">Colorful</a>
+                                    </div>
+                                    <h3 class="product-title"><a href="
+                                        ">Silver Apple Mac Mini</a></h3>
+                                    <div class="product-price">$230.90</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="vs-product product_layout12">
+                                <div class="product-img">
+                                    <div class="product-label">New</div> <a href="
+                                    "><img src="{% static '' %}assets/img/product/product-15-9.jpg" alt="Product"></a>
+                                    <div class="actions">
+                                        <a href="cart.html" class="icon-btn style2"><i class="fal fa-shopping-bag"></i></a>
+                                        <a href="#" class="icon-btn style2"><i class="fal fa-eye"></i></a>
+                                        <a href="#" class="icon-btn style2"><i class="fal fa-heart"></i></a>
+                                    </div>
+                                </div>
+                                <div class="product-content">
+                                    <div class="product-category">
+                                        <a href="shop.html">Men Shoes</a>
+                                    </div>
+                                    <h3 class="product-title"><a href="
+                                        ">Gold Finger Ring</a></h3>
+                                    <div class="product-price">$230.90</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vs-pagination pt-20 pb-30">
+                <ul>
+                    <li><a href="#"><i class="far fa-chevron-left"></i></a></li>
+                    <li><a href="#" class="active">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#"><i class="far fa-chevron-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--==============================
+			Footer Area
+	==============================-->
+    <footer class="footer-wrapper footer-layout3" data-bg-src="{% static 'assets/img/bg/footer-bg-3-1.jpg' %}">
+        <div class="widget-area">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-sm-6 col-md-6 col-lg-auto">
+                        <div class="widget  footer-widget">
+                            <h3 class="widget_title">Office</h3>
+                            <div class="vs-widget-about">
+                                <p class="footer-info">29 Holles Place, Dublin 2 D02 YY46</p>
+                                <p class="footer-info">68 Jay Street, Suite 902 New Side Brooklyn, NY 11201</p>
+                                <p class="footer-info">United States</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-auto">
+                        <div class="widget widget_nav_menu  footer-widget">
+                            <h3 class="widget_title">Useful Links</h3>
+                            <div class="menu-all-pages-container">
+                                <ul class="menu">
+                                    <li><a href="#">Customer Rating</a></li>
+                                    <li><a href="#">Top Product</a></li>
+                                    <li><a href="#">Weekly Best Items</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Latest Posts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-auto">
+                        <div class="widget widget_nav_menu  footer-widget">
+                            <h3 class="widget_title">Quick Links</h3>
+                            <div class="menu-all-pages-container">
+                                <ul class="menu">
+                                    <li><a href="#">Why Buy From Us?</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Store Locator</a></li>
+                                    <li><a href="#">About Blue John</a></li>
+                                    <li><a href="#">About Whitby Jet</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-auto">
+                        <div class="widget widget_nav_menu  footer-widget">
+                            <h3 class="widget_title">Services</h3>
+                            <div class="menu-all-pages-container">
+                                <ul class="menu">
+                                    <li><a href="#">Make an Appointment</a></li>
+                                    <li><a href="#">Jewellery Design Service</a></li>
+                                    <li><a href="#">Jewellery Repairs</a></li>
+                                    <li><a href="#">Price Match Promise</a></li>
+                                    <li><a href="#">Trade Your Watch</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright-wrap text-center">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-md-auto">
+                        <p class="mb-0"><i class="fal fa-copyright"></i> 2022 <a class="text-reset" href="{% url 'home1' %}">Vendora</a>. All rights reserved by <a class="text-reset" href="https://themeforest.net/user/vecuro">Vecuro</a>.</p>
+                    </div>
+                    <div class="col-md-auto d-none d-md-block">
+                        <img src="{% static 'assets/img/footer/card-2.png' %}" alt="Footer Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--********************************
+			Code End  Here 
+	******************************** -->
+
+
+    <!-- Scroll To Top -->
+    <a href="#" class="scrollToTop scroll-btn"><i class="far fa-arrow-up"></i></a>
+{% endblock %}
