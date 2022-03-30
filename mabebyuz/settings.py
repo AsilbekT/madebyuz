@@ -29,6 +29,7 @@ ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
+SITE_ID = 1 
 
 INSTALLED_APPS = [
     'adminlte3',
@@ -40,10 +41,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'pages.apps.PagesConfig',
     'store.apps.StoreConfig',
-     # Optional: Django admin theme (must be before django.contrib.admin)
     'adminlte3_theme',
     'blogs.apps.BlogsConfig',
+    'django.contrib.sites',
+    'django.contrib.sitemaps', 
+
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

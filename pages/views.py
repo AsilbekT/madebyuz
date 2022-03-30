@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 
 # Create your views here.
 
@@ -8,3 +9,6 @@ def login(request):
 
 def signup(request):
     return render(request, "signup.html")
+
+def a(request):
+    return HttpResponse('a page')

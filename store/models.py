@@ -3,6 +3,7 @@ from distutils.command.upload import upload
 from email.policy import default
 from django.db import models
 from django.contrib.auth.models import User
+import slugify
 # Create your models here.
 
 class Customer(models.Model):
@@ -16,7 +17,12 @@ class Customer(models.Model):
 class Catagories(models.Model):
     name = models.CharField(max_length=200)
     picture = models.ImageField(upload_to="catagories", default="default.jpg")
-
+    slug = models.SlugField(blank=True)
+    
+    def save(self, *args, **kwargs): # new
+        if not self.slug:
+            self.slug = slugify.slugify(self.name)
+        return super().save(*args, **kwargs)
     def __str__(self):
         return self.name
 
@@ -28,6 +34,7 @@ class Catagories(models.Model):
             url = ''
         return url
         
+        
 class Products(models.Model):
     catagory_id = models.ForeignKey(Catagories, on_delete=models.CASCADE)
     name = models.CharField(max_length=200)
@@ -35,9 +42,18 @@ class Products(models.Model):
     price = models.IntegerField()
     picture = models.ImageField(upload_to="products")
     picture_for_mini_items = models.ImageField(upload_to="products", default='default.jpg')
+    slug = models.SlugField(blank=True)
 
     def __str__(self):
         return self.name
+
+    def save(self, *args, **kwargs): # new
+        if not self.slug:
+            self.slug = slugify.slugify(self.name)
+        return super().save(*args, **kwargs)
+
+    def get_absolute_url(self):
+        return f"/{self.catagory_id.slug}/"
 
     @property
     def product_url(self):

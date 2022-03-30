@@ -15,8 +15,12 @@ class Blog(models.Model):
     text = models.TextField()
     date = models.DateTimeField(auto_now_add=True)
     slug = models.SlugField(blank=True)
+
     def __str__(self):
         return self.title
+
+    def get_absolute_url(self):
+        return f"/blogs/{self.slug}/"
 
     @property
     def picture_url(self):

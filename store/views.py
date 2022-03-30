@@ -29,6 +29,10 @@ def organic_food(request):
     return render(request, "organic_food/organic_food.html")
 
 
+def organic_clothes(request):
+    return render(request, "organic_food/organic_food.html")
+
+
 def home_textile(request):
     return render(request, "home_textile/home_textile.html")
 
